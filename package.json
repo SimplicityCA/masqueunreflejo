@@ -1,0 +1,17 @@
+{
+  "name": "mas_que_un_reflejo",
+  "version": "0.0.0",
+  "description": "Mas que un reflejo webapp",
+  "main": "README.txt",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "~3.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "Joshua Fabara",
+  "license": "BSD-2-Clause"
+}

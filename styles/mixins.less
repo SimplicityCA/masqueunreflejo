@@ -1,0 +1,11 @@
+.anchor-styles(@color, @padding_percentage) {
+  font-weight: bold;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: @color;
+  background-color: #FFF;
+  text-decoration: none;
+  @media (max-width: @screen-sm-max) {
+  	padding: 10px @padding_percentage;
+  }
+}
