@@ -1,18 +1,55 @@
 @import 'vars.less';
 body {
-  background-color: #FFF; 
-  max-width: 950px;
+  background: url('../../assets/fondo-cuadrado.jpg'); 
   margin: 0 auto;
   font-size: 12px;
   font-family: 'Arial';
-  margin-bottom: 40px;
-  @media (max-width: @screen-sm-max) {
-    margin: 0 20px 20px 20px;
-  }
-  @media (max-width: @screen-xs-max) {
-    margin: 30px 0;
+  
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  img{
+    width:100%
   }
 }
+
+.header{
+    img{
+      width:50%;
+    }
+}
+
+.content{
+  text-align:center;
+  vertical-align: middle;
+  
+}
+.btn-common{
+    background-color:#F5AA7F;
+    border-color: #F5AA7F;
+    background-image: none;
+      /*padding:30px;
+      font-size:26px;*/
+    
+  }
+  .btn-common:hover,.btn-common:focus{
+    background-color:#F1A25F;
+    border-color: #F1A25F;
+    background-image: none;
+    
+  }
+.congrats{
+  font-size: 26px;
+  color:white;
+  margin-top:100px;
+  margin-bottom:100px;
+}
+ul{
+  list-style: none;
+  } 
 img {
   @media (max-width: @screen-sm-max) {
     width: 100%;
