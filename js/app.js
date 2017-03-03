@@ -86,9 +86,8 @@ $(function () {
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: 625,
-      minWidth: 625,
-      maxHeight: 500,
+      maxWidth: 500,
+      // maxHeight: 800,
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,

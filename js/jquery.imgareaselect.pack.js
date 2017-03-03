@@ -1,1 +1,1232 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(m($){1f W=2v.4N,D=2v.4M,F=2v.4L,u=2v.4K;m V(){C $("<4J/>")};$.N=m(T,c){1f O=$(T),1F,A=V(),1j=V(),I=V().r(V()).r(V()).r(V()),B=V().r(V()).r(V()).r(V()),E=$([]),1K,G,l,17={v:0,l:0},Q,M,1k,1g={v:0,l:0},12=0,1J="1H",2k,2j,1s,1r,S,1A,1z,2o,2n,14,1P,a,b,j,g,f={a:0,b:0,j:0,g:0,H:0,L:0},2u=R.4I,$p,d,i,o,w,h,2p;m 1m(x){C x+17.v-1g.v};m 1l(y){C y+17.l-1g.l};m 1a(x){C x-17.v+1g.v};m 19(y){C y-17.l+1g.l};m 1y(3H){C 3H.4H-1g.v};m 1x(3G){C 3G.4G-1g.l};m 13(31){1f 1i=31||1s,1h=31||1r;C{a:u(f.a*1i),b:u(f.b*1h),j:u(f.j*1i),g:u(f.g*1h),H:u(f.j*1i)-u(f.a*1i),L:u(f.g*1h)-u(f.b*1h)}};m 23(a,b,j,g,30){1f 1i=30||1s,1h=30||1r;f={a:u(a/1i||0),b:u(b/1h||0),j:u(j/1i||0),g:u(g/1h||0)};f.H=f.j-f.a;f.L=f.g-f.b};m 1e(){9(!1F||!O.H()){C}17={v:u(O.2t().v),l:u(O.2t().l)};Q=O.2X();M=O.3F();17.l+=(O.2Z()-M)>>1;17.v+=(O.2q()-Q)>>1;1A=u(c.4F/1s)||0;1z=u(c.4E/1r)||0;2o=u(F(c.4D/1s||1<<24,Q));2n=u(F(c.4C/1r||1<<24,M));9($().4B=="1.3.2"&&1J=="21"&&!2u["4A"]){17.l+=D(R.1p.2r,2u.2r);17.v+=D(R.1p.2s,2u.2s)}1g=/1H|4z/.1W(1k.q("1o"))?{v:u(1k.2t().v)-1k.2s(),l:u(1k.2t().l)-1k.2r()}:1J=="21"?{v:$(R).2s(),l:$(R).2r()}:{v:0,l:0};G=1m(0);l=1l(0);9(f.j>Q||f.g>M){1T()}};m 1U(3D){9(!1P){C}A.q({v:1m(f.a),l:1l(f.b)}).r(1j).H(w=f.H).L(h=f.L);1j.r(I).r(E).q({v:0,l:0});I.H(D(w-I.2q()+I.2X(),0)).L(D(h-I.2Z()+I.3F(),0));$(B[0]).q({v:G,l:l,H:f.a,L:M});$(B[1]).q({v:G+f.a,l:l,H:w,L:f.b});$(B[2]).q({v:G+f.j,l:l,H:Q-f.j,L:M});$(B[3]).q({v:G+f.a,l:l+f.g,H:w,L:M-f.g});w-=E.2q();h-=E.2Z();2N(E.3c){15 8:$(E[4]).q({v:w>>1});$(E[5]).q({v:w,l:h>>1});$(E[6]).q({v:w>>1,l:h});$(E[7]).q({l:h>>1});15 4:E.3E(1,3).q({v:w});E.3E(2,4).q({l:h})}9(3D!==Y){9($.N.2Y!=2Q){$(R).U($.N.2z,$.N.2Y)}9(c.1S){$(R)[$.N.2z]($.N.2Y=2Q)}}9($.1b.1E&&I.2q()-I.2X()==2){I.q("3C",0);3v(m(){I.q("3C","4y")},0)}};m 22(3B){1e();1U(3B);a=1m(f.a);b=1l(f.b);j=1m(f.j);g=1l(f.g)};m 27(2W,2w){c.1O?2W.4x(c.1O,2w):2W.1q()};m 1c(2V){1f x=1a(1y(2V))-f.a,y=19(1x(2V))-f.b;9(!2p){1e();2p=11;A.1G("4w",m(){2p=Y})}S="";9(c.2D){9(y<=c.1V){S="n"}X{9(y>=f.L-c.1V){S="s"}}9(x<=c.1V){S+="w"}X{9(x>=f.H-c.1V){S+="e"}}}A.q("2U",S?S+"-18":c.26?"4v":"");9(1K){1K.4u()}};m 2R(4t){$("1p").q("2U","");9(c.4s||f.H*f.L==0){27(A.r(B),m(){$(J).1q()})}$(R).U("P",2l);A.P(1c);c.2f(T,13())};m 2C(1X){9(1X.3x!=1){C Y}1e();9(S){$("1p").q("2U",S+"-18");a=1m(f[/w/.1W(S)?"j":"a"]);b=1l(f[/n/.1W(S)?"g":"b"]);$(R).P(2l).1G("1w",2R);A.U("P",1c)}X{9(c.26){2k=G+f.a-1y(1X);2j=l+f.b-1x(1X);A.U("P",1c);$(R).P(2S).1G("1w",m(){c.2f(T,13());$(R).U("P",2S);A.P(1c)})}X{O.1N(1X)}}C Y};m 1v(3A){9(14){9(3A){j=D(G,F(G+Q,a+W(g-b)*14*(j>a||-1)));g=u(D(l,F(l+M,b+W(j-a)/14*(g>b||-1))));j=u(j)}X{g=D(l,F(l+M,b+W(j-a)/14*(g>b||-1)));j=u(D(G,F(G+Q,a+W(g-b)*14*(j>a||-1))));g=u(g)}}};m 1T(){a=F(a,G+Q);b=F(b,l+M);9(W(j-a)<1A){j=a-1A*(j<a||-1);9(j<G){a=G+1A}X{9(j>G+Q){a=G+Q-1A}}}9(W(g-b)<1z){g=b-1z*(g<b||-1);9(g<l){b=l+1z}X{9(g>l+M){b=l+M-1z}}}j=D(G,F(j,G+Q));g=D(l,F(g,l+M));1v(W(j-a)<W(g-b)*14);9(W(j-a)>2o){j=a-2o*(j<a||-1);1v()}9(W(g-b)>2n){g=b-2n*(g<b||-1);1v(11)}f={a:1a(F(a,j)),j:1a(D(a,j)),b:19(F(b,g)),g:19(D(b,g)),H:W(j-a),L:W(g-b)};1U();c.2g(T,13())};m 2l(2T){j=/w|e|^$/.1W(S)||14?1y(2T):1m(f.j);g=/n|s|^$/.1W(S)||14?1x(2T):1l(f.g);1T();C Y};m 1u(3z,3y){j=(a=3z)+f.H;g=(b=3y)+f.L;$.2c(f,{a:1a(a),b:19(b),j:1a(j),g:19(g)});1U();c.2g(T,13())};m 2S(2m){a=D(G,F(2k+1y(2m),G+Q-f.H));b=D(l,F(2j+1x(2m),l+M-f.L));1u(a,b);2m.4r();C Y};m 2h(){$(R).U("P",2h);1e();j=a;g=b;1T();S="";9(!B.2y(":4q")){A.r(B).1q().2E(c.1O||0)}1P=11;$(R).U("1w",1M).P(2l).1G("1w",2R);A.U("P",1c);c.3w(T,13())};m 1M(){$(R).U("P",2h).U("1w",1M);27(A.r(B));23(1a(a),19(b),1a(a),19(b));9(!(J 4p $.N)){c.2g(T,13());c.2f(T,13())}};m 2A(2i){9(2i.3x!=1||B.2y(":4o")){C Y}1e();2k=a=1y(2i);2j=b=1x(2i);$(R).P(2h).1w(1M);C Y};m 2B(){22(Y)};m 2x(){1F=11;25(c=$.2c({1R:"4n",26:11,20:"1p",2D:11,1V:10,3u:m(){},3w:m(){},2g:m(){},2f:m(){}},c));A.r(B).q({3a:""});9(c.2F){1P=11;1e();1U();A.r(B).1q().2E(c.1O||0)}3v(m(){c.3u(T,13())},0)};1f 2Q=m(16){1f k=c.1S,d,t,2M=16.4m;d=!1L(k.2O)&&(16.2e||16.3r.2e)?k.2O:!1L(k.2a)&&16.3s?k.2a:!1L(k.2b)&&16.3t?k.2b:!1L(k.2P)?k.2P:10;9(k.2P=="18"||(k.2b=="18"&&16.3t)||(k.2a=="18"&&16.3s)||(k.2O=="18"&&(16.2e||16.3r.2e))){2N(2M){15 37:d=-d;15 39:t=D(a,j);a=F(a,j);j=D(t+d,a);1v();1t;15 38:d=-d;15 40:t=D(b,g);b=F(b,g);g=D(t+d,b);1v(11);1t;3q:C}1T()}X{a=F(a,j);b=F(b,g);2N(2M){15 37:1u(D(a-d,G),b);1t;15 38:1u(a,D(b-d,l));1t;15 39:1u(a+F(d,Q-1a(j)),b);1t;15 40:1u(a,b+F(d,M-19(g)));1t;3q:C}}C Y};m 1Q(3p,2L){3n(1f 2d 4l 2L){9(c[2d]!==1Y){3p.q(2L[2d],c[2d])}}};m 25(K){9(K.20){(1k=$(K.20)).3h(A.r(B))}$.2c(c,K);1e();9(K.2K!=3o){E.1n();E=$([]);i=K.2K?K.2K=="4k"?4:8:0;3d(i--){E=E.r(V())}E.29(c.1R+"-4j").q({1o:"1H",35:0,1I:12+1||1});9(!4i(E.q("H"))>=0){E.H(5).L(5)}9(o=c.2J){E.q({2J:o,2G:"3k"})}1Q(E,{3l:"2I-28",3j:"2H-28",3m:"1d"})}1s=c.4h/Q||1;1r=c.4g/M||1;9(K.a!=3o){23(K.a,K.b,K.j,K.g);K.2F=!K.1q}9(K.1S){c.1S=$.2c({2b:1,2a:"18"},K.1S)}B.29(c.1R+"-4f");1j.29(c.1R+"-4e");3n(i=0;i++<4;){$(I[i-1]).29(c.1R+"-2I"+i)}1Q(1j,{4d:"2H-28",4c:"1d"});1Q(I,{3m:"1d",2J:"2I-H"});1Q(B,{4b:"2H-28",4a:"1d"});9(o=c.3l){$(I[0]).q({2G:"3k",3i:o})}9(o=c.3j){$(I[1]).q({2G:"49",3i:o})}A.3h(1j.r(I).r(1K).r(E));9($.1b.1E){9(o=(B.q("3g")||"").3f(/1d=(\\d+)/)){B.q("1d",o[1]/1Z)}9(o=(I.q("3g")||"").3f(/1d=(\\d+)/)){I.q("1d",o[1]/1Z)}}9(K.1q){27(A.r(B))}X{9(K.2F&&1F){1P=11;A.r(B).2E(c.1O||0);22()}}14=(d=(c.48||"").47(/:/))[0]/d[1];O.r(B).U("1N",2A);9(c.1D||c.1C===Y){A.U("P",1c).U("1N",2C);$(3e).U("18",2B)}X{9(c.1C||c.1D===Y){9(c.2D||c.26){A.P(1c).1N(2C)}$(3e).18(2B)}9(!c.46){O.r(B).1N(2A)}}c.1C=c.1D=1Y};J.1n=m(){25({1D:11});A.r(B).1n()};J.45=m(){C c};J.32=25;J.44=13;J.43=23;J.42=1M;J.41=22;$p=O;3d($p.3c){12=D(12,!1L($p.q("z-3b"))?$p.q("z-3b"):12);9($p.q("1o")=="21"){1J="21"}$p=$p.20(":3Z(1p)")}12=c.1I||12;9($.1b.1E){O.3Y("3X","3W")}$.N.2z=$.1b.1E||$.1b.3V?"3U":"3T";9($.1b.3S){1K=V().q({H:"1Z%",L:"1Z%",1o:"1H",1I:12+2||2})}A.r(B).q({3a:"36",1o:1J,3R:"36",1I:12||"0"});A.q({1I:12+2||2});1j.r(I).q({1o:"1H",35:0});T.34||T.3Q=="34"||!O.2y("3P")?2x():O.1G("3O",2x);9(!1F&&$.1b.1E&&$.1b.3N>=7){T.33=T.33}};$.2w.N=m(Z){Z=Z||{};J.3M(m(){9($(J).1B("N")){9(Z.1n){$(J).1B("N").1n();$(J).3L("N")}X{$(J).1B("N").32(Z)}}X{9(!Z.1n){9(Z.1C===1Y&&Z.1D===1Y){Z.1C=11}$(J).1B("N",3K $.N(J,Z))}}});9(Z.3J){C $(J).1B("N")}C J}})(3I);',62,298,'|||||||||if|x1|y1|_7|||_23|y2|||x2||top|function||||css|add|||_4|left|||||_a|_d|return|_2|_e|_3|_10|width|_c|this|_54|height|_13|imgAreaSelect|_8|mousemove|_12|document|_1c|_6|unbind|_5|_1|else|false|_55||true|_16|_2c|_21|case|_4f|_11|resize|_29|_28|browser|_39|opacity|_30|var|_15|sy|sx|_b|_14|_27|_26|remove|position|body|hide|_1b|_1a|break|_44|_41|mouseup|evY|evX|_1e|_1d|data|enable|disable|msie|_9|one|absolute|zIndex|_17|_f|isNaN|_49|mousedown|fadeSpeed|_22|_50|classPrefix|keys|_31|_32|resizeMargin|test|_3f|undefined|100|parent|fixed|_35|_2e||_4e|movable|_37|color|addClass|ctrl|shift|extend|_53|altKey|onSelectEnd|onSelectChange|_48|_4b|_19|_18|_3d|_47|_20|_1f|_25|outerWidth|scrollTop|scrollLeft|offset|_24|Math|fn|_4d|is|keyPress|_4a|_4c|_3e|resizable|fadeIn|show|borderStyle|background|border|borderWidth|handles|_52|key|switch|alt|arrows|_34|_3b|_40|_43|cursor|_3a|_38|innerWidth|onKeyPress|outerHeight|_2f|_2d|setOptions|src|complete|fontSize|hidden||||visibility|index|length|while|window|match|filter|append|borderColor|borderColor2|solid|borderColor1|borderOpacity|for|null|_51|default|originalEvent|ctrlKey|shiftKey|onInit|setTimeout|onSelectStart|which|_46|_45|_42|_36|margin|_33|slice|innerHeight|_2b|_2a|jQuery|instance|new|removeData|each|version|load|img|readyState|overflow|opera|keypress|keydown|safari|on|unselectable|attr|not||update|cancelSelection|setSelection|getSelection|getOptions|persistent|split|aspectRatio|dashed|outerOpacity|outerColor|selectionOpacity|selectionColor|selection|outer|imageHeight|imageWidth|parseInt|handle|corners|in|keyCode|imgareaselect|animated|instanceof|visible|preventDefault|autoHide|_3c|toggle|move|mouseout|fadeOut|auto|relative|getBoundingClientRect|jquery|maxHeight|maxWidth|minHeight|minWidth|pageY|pageX|documentElement|div|round|min|max|abs'.split('|')))
+/*
+ * imgAreaSelect jQuery plugin
+ * version 1.0.0-rc.1
+ *
+ * Copyright (c) 2008-2013 Michal Wojciechowski (odyniec.net)
+ *
+ * Dual licensed under the MIT (http://opensource.org/licenses/MIT)
+ * and GPL (http://opensource.org/licenses/GPL-2.0) licenses.
+ *
+ * http://odyniec.net/projects/imgareaselect/
+ *
+ */
+
+(function($) {
+
+/*
+ * Math functions will be used extensively, so it's convenient to make a few
+ * shortcuts
+ */    
+var abs = Math.abs,
+    max = Math.max,
+    min = Math.min,
+    round = Math.round;
+
+/**
+ * Create a new HTML div element
+ * 
+ * @return A jQuery object representing the new element
+ */
+function div() {
+    return $('<div/>');
+}
+
+/**
+ * imgAreaSelect initialization
+ * 
+ * @param img
+ *            A HTML image element to attach the plugin to
+ * @param options
+ *            An options object
+ */
+$.imgAreaSelect = function (img, options) {
+    var 
+        /* jQuery object representing the image */ 
+        $img = $(img),
+        
+        /* Has the image finished loading? */
+        imgLoaded,
+        
+        /* Plugin elements */
+        
+        /* Container box */
+        $box = div(),
+        /* Selection area */
+        $area = div(),
+        /* Border (four divs) */
+        $border = div().add(div()).add(div()).add(div()),
+        /* Outer area */
+        $outer = div().add(div()).add(div()).add(div()),
+        /* Handles (empty by default, initialized in setOptions()) */
+        $handles = $([]),
+        
+        /* Image position (relative to viewport) */
+        left, top,
+        
+        /* Image offset (as returned by .offset()) */
+        imgOfs = { left: 0, top: 0 },
+        
+        /* Image dimensions (as returned by .width() and .height()) */
+        imgWidth, imgHeight,
+        
+        /*
+         * jQuery object representing the parent element that the plugin
+         * elements are appended to
+         */
+        $parent,
+        
+        /* Parent element offset (as returned by .offset()) */
+        parOfs = { left: 0, top: 0 },
+        
+        /* Base z-index for plugin elements */
+        zIndex = 0,
+                
+        /* Plugin elements position */
+        position = 'absolute',
+        
+        /* X/Y coordinates of the starting point for move/resize operations */ 
+        startX, startY,
+
+        /*
+         * Distance between the mouse cursor (or touch point) and selection area
+         * edges (when resizing)
+         */
+        edgeX, edgeY,
+        
+        /* Horizontal and vertical scaling factors */
+        scaleX, scaleY,
+
+        /* Current resize mode ("nw", "se", etc.) */
+        resize,
+
+        /* Selection area constraints */
+        minWidth, minHeight, maxWidth, maxHeight,
+
+        /* Aspect ratio to maintain (floating point number) */
+        aspectRatio,
+
+        /* Are the plugin elements currently displayed? */
+        shown,
+
+        /* Current selection (relative to parent element) */
+        x1, y1, x2, y2,
+
+        /* Current selection (relative to scaled image) */
+        selection = { x1: 0, y1: 0, x2: 0, y2: 0, width: 0, height: 0 },
+
+        /* User agent */
+        ua = navigator.userAgent,
+        
+        /* Is the user performing a touch action? */
+        touch,
+
+        /* Various helper variables used throughout the code */ 
+        $p, d, i, o, w, h, adjusted;
+
+    /*
+     * Translate selection coordinates (relative to scaled image) to viewport
+     * coordinates (relative to parent element)
+     */
+    
+    /**
+     * Translate selection X to viewport X
+     * 
+     * @param x
+     *            Selection X
+     * @return Viewport X
+     */
+    function viewX(x) {
+        return x + imgOfs.left - parOfs.left;
+    }
+
+    /**
+     * Translate selection Y to viewport Y
+     * 
+     * @param y
+     *            Selection Y
+     * @return Viewport Y
+     */
+    function viewY(y) {
+        return y + imgOfs.top - parOfs.top;
+    }
+
+    /*
+     * Translate viewport coordinates to selection coordinates
+     */
+    
+    /**
+     * Translate viewport X to selection X
+     * 
+     * @param x
+     *            Viewport X
+     * @return Selection X
+     */
+    function selX(x) {
+        return x - imgOfs.left + parOfs.left;
+    }
+
+    /**
+     * Translate viewport Y to selection Y
+     * 
+     * @param y
+     *            Viewport Y
+     * @return Selection Y
+     */
+    function selY(y) {
+        return y - imgOfs.top + parOfs.top;
+    }
+    
+    /*
+     * Translate event coordinates (relative to document) to viewport
+     * coordinates
+     */
+    
+    /**
+     * Get event X and translate it to viewport X
+     * 
+     * @param event
+     *            The event object
+     * @return Viewport X
+     */
+    function evX(event) {
+        var coords = touchCoords(event) || event, x;
+
+        if (x = parseInt(coords.pageX))
+            return x - parOfs.left;
+    }
+
+    /**
+     * Get event Y and translate it to viewport Y
+     * 
+     * @param event
+     *            The event object
+     * @return Viewport Y
+     */
+    function evY(event) {
+        var coords = touchCoords(event) || event, y;
+
+        if (y = parseInt(coords.pageY))
+            return y - parOfs.top;
+    }
+    
+    /**
+     * Get the first touch object in an event
+     *
+     * @param event
+     *            The event object
+     * @return The first touch object found in the event object, or false if
+     *         none are found
+     */
+    function touchCoords(event) {
+        var oev = event.originalEvent || {};
+        
+        return oev.touches && oev.touches.length ? oev.touches[0] : false;
+    }
+
+    /**
+     * Get the current selection
+     * 
+     * @param noScale
+     *            If set to <code>true</code>, scaling is not applied to the
+     *            returned selection
+     * @return Selection object
+     */
+    function getSelection(noScale) {
+        var sx = noScale || scaleX, sy = noScale || scaleY;
+        
+        return { x1: round(selection.x1 * sx),
+            y1: round(selection.y1 * sy),
+            x2: round(selection.x2 * sx) - 1,
+            y2: round(selection.y2 * sy) - 1,
+            width: round(selection.x2 * sx) - round(selection.x1 * sx),
+            height: round(selection.y2 * sy) - round(selection.y1 * sy) };
+    }
+    
+    /**
+     * Set the current selection
+     * 
+     * @param x1
+     *            X coordinate of the upper left corner of the selection area
+     * @param y1
+     *            Y coordinate of the upper left corner of the selection area
+     * @param x2
+     *            X coordinate of the lower right corner of the selection area
+     * @param y2
+     *            Y coordinate of the lower right corner of the selection area
+     * @param noScale
+     *            If set to <code>true</code>, scaling is not applied to the
+     *            new selection
+     */
+    function setSelection(x1, y1, x2, y2, noScale) {
+        var sx = noScale || scaleX, sy = noScale || scaleY;
+        
+        selection = {
+            x1: round(x1 / sx || 0),
+            y1: round(y1 / sy || 0),
+            x2: round(++x2 / sx || 0),
+            y2: round(++y2 / sy || 0)
+        };
+        
+        selection.width = selection.x2 - selection.x1;
+        selection.height = selection.y2 - selection.y1;
+    }
+
+    /**
+     * Recalculate image and parent offsets
+     */
+    function adjust() {
+        /*
+         * Do not adjust if image has not yet loaded or if width is not a
+         * positive number. The latter might happen when imgAreaSelect is put
+         * on a parent element which is then hidden.
+         */
+        if (!imgLoaded || !$img.width())
+            return;
+        
+        /*
+         * Get image offset. The .offset() method returns float values, so they
+         * need to be rounded.
+         */
+        imgOfs = { left: round($img.offset().left), top: round($img.offset().top) };
+        
+        /* Get image dimensions */
+        imgWidth = $img.innerWidth();
+        imgHeight = $img.innerHeight();
+        
+        imgOfs.top += ($img.outerHeight() - imgHeight) >> 1;
+        imgOfs.left += ($img.outerWidth() - imgWidth) >> 1;
+
+        /* Set minimum and maximum selection area dimensions */
+        minWidth = round(options.minWidth / scaleX) || 0;
+        minHeight = round(options.minHeight / scaleY) || 0;
+        maxWidth = round(min(options.maxWidth / scaleX || 1<<24, imgWidth));
+        maxHeight = round(min(options.maxHeight / scaleY || 1<<24, imgHeight));
+        
+        /* Determine parent element offset */ 
+        parOfs = position == 'fixed' ?
+            /* Plugin elements position set to fixed */
+            { left: $(document).scrollLeft(), top: $(document).scrollTop() } :
+            /* Check parent element position */
+            /static|^$/.test($parent.css('position')) ?
+                /* Static */
+                { left: 0, top: 0 } :
+                /* Absolute or relative */
+                { left: round($parent.offset().left) - $parent.scrollLeft(),
+                    top: round($parent.offset().top) - $parent.scrollTop() };
+
+        left = viewX(0);
+        top = viewY(0);
+        
+        /*
+         * Check if selection area is within image boundaries, adjust if
+         * necessary
+         */
+        if (selection.x2 > imgWidth || selection.y2 > imgHeight)
+            fixAreaCoords();
+    }
+
+    /**
+     * Update plugin elements
+     * 
+     * @param resetKeyPress
+     *            If set to <code>false</code>, this instance's keypress
+     *            event handler is not activated
+     */
+    function update(resetKeyPress) {
+        /* If plugin elements are hidden, do nothing */
+        if (!shown) return;
+
+        /*
+         * Set the position and size of the container box and the selection area
+         * inside it
+         */
+        $box.css({ left: viewX(selection.x1), top: viewY(selection.y1) })
+            .add($area).width(w = selection.width).height(h = selection.height);
+
+        /*
+         * Reset the position of selection area, borders, and handles (IE6/IE7
+         * position them incorrectly if we don't do this)
+         */ 
+        $area.add($border).add($handles).css({ left: 0, top: 0 });
+
+        /* Set border dimensions */
+        $border
+            .width(max(w - $border.outerWidth() + $border.innerWidth(), 0))
+            .height(max(h - $border.outerHeight() + $border.innerHeight(), 0));
+
+        /* Set the dimensions and border styles of the outer area */
+        $($outer[0]).css({ left: left, top: top,
+            width: selection.x1, height: imgHeight });
+        $($outer[1]).css({ left: left + selection.x1, top: top,
+            width: w, height: selection.y1 });
+        $($outer[2]).css({ left: left + selection.x2, top: top,
+            width: imgWidth - selection.x2, height: imgHeight });
+        $($outer[3]).css({ left: left + selection.x1, top: top + selection.y2,
+            width: w, height: imgHeight - selection.y2 });
+
+        w -= $handles.outerWidth();
+        h -= $handles.outerHeight();
+        
+        /* Arrange handles */
+        switch ($handles.length) {
+        case 8:
+            $($handles[4]).css({ left: w >> 1 });
+            $($handles[5]).css({ left: w, top: h >> 1 });
+            $($handles[6]).css({ left: w >> 1, top: h });
+            $($handles[7]).css({ top: h >> 1 });
+        case 4:
+            $handles.slice(1,3).css({ left: w });
+            $handles.slice(2,4).css({ top: h });
+        }
+
+        if (resetKeyPress !== false) {
+            /*
+             * Need to reset the document keypress event handler -- unbind the
+             * current handler
+             */
+            if ($.imgAreaSelect.keyPress != docKeyPress)
+                $(document).unbind($.imgAreaSelect.keyPress,
+                    $.imgAreaSelect.onKeyPress);
+
+            if (options.keys)
+                /*
+                 * Set the document keypress event handler to this instance's
+                 * docKeyPress() function
+                 */
+                $(document)[$.imgAreaSelect.keyPress](
+                    $.imgAreaSelect.onKeyPress = docKeyPress);
+        }
+    }
+    
+    /**
+     * Do the complete update sequence: recalculate offsets, update the
+     * elements, and set the correct values of x1, y1, x2, and y2.
+     * 
+     * @param resetKeyPress
+     *            If set to <code>false</code>, this instance's keypress
+     *            event handler is not activated
+     */
+    function doUpdate(resetKeyPress) {
+        adjust();
+        update(resetKeyPress);
+        x1 = viewX(selection.x1); y1 = viewY(selection.y1);
+        x2 = viewX(selection.x2); y2 = viewY(selection.y2);
+    }
+    
+    /**
+     * Hide or fade out an element (or multiple elements)
+     * 
+     * @param $elem
+     *            A jQuery object containing the element(s) to hide/fade out
+     * @param fn
+     *            Callback function to be called when fadeOut() completes
+     */
+    function hide($elem, fn) {
+        options.fadeDuration ? $elem.fadeOut(options.fadeDuration, fn) : $elem.hide();
+    }
+
+    /**
+     * Check if a touch event is expected and if the passed event object really
+     * is a touch event
+     *
+     * @param event
+     *            The event object
+     * @return True if the event handler should be interrupted
+     */
+    function breakWhenNoTouch(event) {
+        return touch && !/^touch/.test(event.type);
+    }
+
+    /**
+     * Check event coordinates to determine if the selection area should be
+     * resized or moved
+     *
+     * @param event
+     *            The event object
+     */
+    function checkResize(event) {
+        var x = selX(evX(event)) - selection.x1,
+            y = selY(evY(event)) - selection.y1;
+
+        /* Clear the resize mode */
+        resize = '';
+
+        if (options.resizable) {
+            /*
+             * Check if the mouse pointer is over the resize margin area and set
+             * the resize mode accordingly
+             */
+            if (y <= options.resizeMargin)
+                resize = 'n';
+            else if (y >= selection.height - options.resizeMargin)
+                resize = 's';
+            if (x <= options.resizeMargin)
+                resize += 'w';
+            else if (x >= selection.width - options.resizeMargin)
+                resize += 'e';
+        }
+
+        $box.css('cursor', resize ? resize + '-resize' :
+            options.movable ? 'move' : '');
+    }
+
+    /**
+     * Selection area mousemove event handler
+     * 
+     * @param event
+     *            The event object
+     */
+    function areaMouseMove(event) {
+        if (breakWhenNoTouch(event))
+            return;
+
+        if (!adjusted) {
+            adjust();
+            adjusted = true;
+
+            $box.one('mouseout', function () { adjusted = false; });
+        }
+
+        checkResize(event);
+    }
+
+    /**
+     * Document mouseup event handler
+     * 
+     * @param event
+     *            The event object
+     */
+    function docMouseUp(event) {
+        /* Reset touch action flag */
+        touch = false;
+        /* Set back the default cursor */
+        $('body').css('cursor', '');
+        /*
+         * If autoHide is enabled, or if the selection has zero width/height,
+         * hide the selection and the outer area
+         */
+        if (options.autoHide || selection.width * selection.height == 0)
+            hide($box.add($outer), function () { $(this).hide(); });
+
+        $(document).off('mousemove touchmove', selectingMouseMove);
+        $box.on('mousemove touchmove', areaMouseMove);
+        
+        /*
+         * If docMouseUp() is called by areaMouseDown() to work around the issue
+         * with Android Chrome, there is no event object, and we don't want to
+         * run the onSelectEnd callback function.
+         */
+        if (event)
+            options.onSelectEnd(img, getSelection());
+    }
+
+    /**
+     * Selection area mousedown event handler
+     * 
+     * @param event
+     *            The event object
+     * @return false
+     */
+    function areaMouseDown(event) {
+        if (event.type == 'mousedown' && event.which != 1) return false;
+        
+        if (event.type == 'touchstart') {
+            /*
+             * Android Chrome often does not produce a touchend event
+             * (https://code.google.com/p/chromium/issues/detail?id=152913), so
+             * if it appears that the touch flag is still set, we call the
+             * mouseup/touchend event handler to clean up after the previous
+             * touch action.
+             */
+            if (touch)
+                docMouseUp();
+
+            /* This is a start of a touch action */
+            touch = true;
+
+            /* 
+             * Normally, checkResize() is called by the mousemove event handler
+             * triggered just before mousedown, but with a touch action there
+             * is no mousemove, so we need to call it explicitly.
+             */
+            checkResize(event);
+        }
+        else
+            adjust();
+
+        if (resize) {
+            /* Resize mode is in effect */
+
+            /*
+             * Set (x1, y1) to the fixed corner of the selection area, and (x2,
+             * y2) to the corner that's being moved.
+             */
+            x1 = viewX(selection['x' + (1 + /w/.test(resize))]);
+            y1 = viewY(selection['y' + (1 + /n/.test(resize))]);
+            x2 = viewX(selection['x' + (1 + !/w/.test(resize))]);
+            y2 = viewY(selection['y' + (1 + !/n/.test(resize))]);
+
+            edgeX = x2 - evX(event);
+            edgeY = y2 - evY(event);
+
+            $(document).on('mousemove touchmove', selectingMouseMove)
+                .one('mouseup touchend', docMouseUp);
+            $box.off('mousemove touchmove', areaMouseMove);
+        }
+        else if (options.movable) {
+            startX = left + selection.x1 - evX(event);
+            startY = top + selection.y1 - evY(event);
+
+            $box.off('mousemove touchmove', areaMouseMove);
+
+            $(document).on('mousemove touchmove', movingMouseMove)
+                .one('mouseup touchend', function () {
+                    touch = false;
+                    options.onSelectEnd(img, getSelection());
+
+                    $(document).off('mousemove touchmove', movingMouseMove);
+                    $box.on('mousemove touchmove', areaMouseMove);
+                });
+        }
+        else
+            $img.mousedown(event);
+
+        return false;
+    }
+
+    /**
+     * Adjust the x2/y2 coordinates to maintain aspect ratio (if defined)
+     * 
+     * @param xFirst
+     *            If set to <code>true</code>, calculate x2 first. Otherwise,
+     *            calculate y2 first.
+     */
+    function fixAspectRatio(xFirst) {
+        if (aspectRatio)
+            if (xFirst) {
+                x2 = max(left, min(left + imgWidth,
+                    x1 + abs(y2 - y1) * aspectRatio * (x2 > x1 || -1)));    
+                y2 = round(max(top, min(top + imgHeight,
+                    y1 + abs(x2 - x1) / aspectRatio * (y2 > y1 || -1))));
+                x2 = round(x2);
+            }
+            else {
+                y2 = max(top, min(top + imgHeight,
+                    y1 + abs(x2 - x1) / aspectRatio * (y2 > y1 || -1)));
+                x2 = round(max(left, min(left + imgWidth,
+                    x1 + abs(y2 - y1) * aspectRatio * (x2 > x1 || -1))));
+                y2 = round(y2);
+            }
+    }
+
+    /**
+     * Check if the coordinates of the selection area are within the required
+     * limits and conform to the aspect ratio; adjust if necessary
+     */
+    function fixAreaCoords() {
+        /*
+         * Make sure the top left corner of the selection area stays within
+         * image boundaries (it might not if the image source was dynamically
+         * changed).
+         */
+        x1 = min(x1, left + imgWidth);
+        y1 = min(y1, top + imgHeight);
+        
+        if (abs(x2 - x1) < minWidth) {
+            /* Selection width is smaller than minWidth */
+            x2 = x1 - minWidth * (x2 < x1 || -1);
+
+            if (x2 < left)
+                x1 = left + minWidth;
+            else if (x2 > left + imgWidth)
+                x1 = left + imgWidth - minWidth;
+        }
+
+        if (abs(y2 - y1) < minHeight) {
+            /* Selection height is smaller than minHeight */
+            y2 = y1 - minHeight * (y2 < y1 || -1);
+
+            if (y2 < top)
+                y1 = top + minHeight;
+            else if (y2 > top + imgHeight)
+                y1 = top + imgHeight - minHeight;
+        }
+
+        x2 = max(left, min(x2, left + imgWidth));
+        y2 = max(top, min(y2, top + imgHeight));
+        
+        fixAspectRatio(abs(x2 - x1) < abs(y2 - y1) * aspectRatio);
+
+        if (abs(x2 - x1) > maxWidth) {
+            /* Selection width is greater than maxWidth */
+            x2 = x1 - maxWidth * (x2 < x1 || -1);
+            fixAspectRatio();
+        }
+
+        if (abs(y2 - y1) > maxHeight) {
+            /* Selection height is greater than maxHeight */
+            y2 = y1 - maxHeight * (y2 < y1 || -1);
+            fixAspectRatio(true);
+        }
+
+        selection = { x1: selX(min(x1, x2)), x2: selX(max(x1, x2)),
+            y1: selY(min(y1, y2)), y2: selY(max(y1, y2)),
+            width: abs(x2 - x1), height: abs(y2 - y1) };
+    }
+
+    /**
+     * Resize the selection area respecting the minimum/maximum dimensions and
+     * aspect ratio
+     */
+    function doResize() {
+        fixAreaCoords();
+
+        update();
+
+        options.onSelectChange(img, getSelection());
+    }
+
+    /**
+     * Mousemove event handler triggered when the user is selecting an area
+     * 
+     * @param event
+     *            The event object
+     * @return false
+     */
+    function selectingMouseMove(event) {
+        if (breakWhenNoTouch(event))
+            return;
+        
+        fixAreaCoords();
+
+        x2 = /w|e|^$/.test(resize) || aspectRatio ? evX(event) + edgeX : viewX(selection.x2);
+        y2 = /n|s|^$/.test(resize) || aspectRatio ? evY(event) + edgeY : viewY(selection.y2);
+
+        doResize();
+
+        return false;        
+    }
+
+    /**
+     * Move the selection area
+     * 
+     * @param newX1
+     *            New viewport X1
+     * @param newY1
+     *            New viewport Y1
+     */
+    function doMove(newX1, newY1) {
+        x2 = (x1 = newX1) + selection.width;
+        y2 = (y1 = newY1) + selection.height;
+
+        $.extend(selection, { x1: selX(x1), y1: selY(y1), x2: selX(x2),
+            y2: selY(y2) });
+
+        update();
+
+        options.onSelectChange(img, getSelection());
+    }
+
+    /**
+     * Mousemove event handler triggered when the selection area is being moved
+     * 
+     * @param event
+     *            The event object
+     * @return false
+     */
+    function movingMouseMove(event) {
+        if (breakWhenNoTouch(event))
+            return;
+
+        x1 = max(left, min(startX + evX(event), left + imgWidth - selection.width));
+        y1 = max(top, min(startY + evY(event), top + imgHeight - selection.height));
+
+        doMove(x1, y1);
+
+        event.preventDefault();     
+        return false;
+    }
+
+    /**
+     * Start selection
+     */
+    function startSelection() {
+        $(document).off('mousemove touchmove', startSelection);
+        adjust();
+
+        x2 = x1;
+        y2 = y1;       
+        doResize();
+
+        resize = '';
+
+        if (!$outer.is(':visible'))
+            /* Show the plugin elements */
+            $box.add($outer).hide().fadeIn(options.fadeDuration||0)
+
+        shown = true;
+
+        $(document).off('mouseup touchend', cancelSelection)
+            .on('mousemove touchmove', selectingMouseMove)
+            .one('mouseup touchend', docMouseUp);
+        $box.off('mousemove touchmove', areaMouseMove);
+
+        options.onSelectStart(img, getSelection());
+    }
+
+    /**
+     * Cancel selection
+     */
+    function cancelSelection() {
+        $(document).off('mousemove touchmove', startSelection)
+            .off('mouseup touchend', cancelSelection);
+        hide($box.add($outer));
+        
+        setSelection(selX(x1), selY(y1), selX(x1), selY(y1));
+        
+        /* If this is an API call, callback functions should not be triggered */
+        if (!(this instanceof $.imgAreaSelect)) {
+            options.onSelectChange(img, getSelection());
+            options.onSelectEnd(img, getSelection());
+        }
+    }
+
+    /**
+     * Image mousedown event handler
+     * 
+     * @param event
+     *            The event object
+     * @return false
+     */
+    function imgMouseDown(event) {
+        /* Ignore the event if animation is in progress */
+        if (event.type == 'mousedown' && event.which != 1 ||
+                $outer.is(':animated'))
+            return false;
+
+        /* If it's a touch action, set the touch flag */
+        touch = event.type == 'touchstart';
+
+        adjust();
+        startX = x1 = evX(event);
+        startY = y1 = evY(event);
+        edgeX = edgeY = 0;
+
+        /* Selection will start when the mouse is moved */
+        $(document).on({ 'mousemove touchmove': startSelection,
+            'mouseup touchend': cancelSelection });
+
+        return false;
+    }
+    
+    /**
+     * Window resize event handler
+     */
+    function windowResize() {
+        doUpdate(false);
+    }
+
+    /**
+     * Image load event handler. This is the final part of the initialization
+     * process.
+     */
+    function imgLoad() {
+        imgLoaded = true;
+
+        /* Set options */
+        setOptions(options = $.extend({
+            classPrefix: 'imgareaselect',
+            movable: true,
+            parent: 'body',
+            resizable: true,
+            resizeMargin: 10,
+            onInit: function () {},
+            onSelectStart: function () {},
+            onSelectChange: function () {},
+            onSelectEnd: function () {}
+        }, options));
+		
+		$box.add($outer).css({ visibility: '' });
+
+        if (options.show) {
+            shown = true;
+            adjust();
+            update();
+            $box.add($outer).hide().fadeIn(options.fadeDuration||0)
+        }
+
+        /*
+         * Call the onInit callback. The setTimeout() call is used to ensure
+         * that the plugin has been fully initialized and the object instance is
+         * available (so that it can be obtained in the callback).
+         */
+        setTimeout(function () { options.onInit(img, getSelection()); }, 0);
+    }
+
+    /**
+     * Document keypress event handler
+     * 
+     * @param event
+     *            The event object
+     * @return false
+     */
+    var docKeyPress = function(event) {
+        var k = options.keys, d, t, key = event.keyCode;
+        
+        d = !isNaN(k.alt) && (event.altKey || event.originalEvent.altKey) ? k.alt :
+            !isNaN(k.ctrl) && event.ctrlKey ? k.ctrl :
+            !isNaN(k.shift) && event.shiftKey ? k.shift :
+            !isNaN(k.arrows) ? k.arrows : 10;
+
+        if (k.arrows == 'resize' || (k.shift == 'resize' && event.shiftKey) ||
+            (k.ctrl == 'resize' && event.ctrlKey) ||
+            (k.alt == 'resize' && (event.altKey || event.originalEvent.altKey)))
+        {
+            /* Resize selection */
+            
+            switch (key) {
+            case 37:
+                /* Left */
+                d = -d;
+            case 39:
+                /* Right */
+                t = max(x1, x2);
+                x1 = min(x1, x2);
+                x2 = max(t + d, x1);
+                fixAspectRatio();
+                break;
+            case 38:
+                /* Up */
+                d = -d;
+            case 40:
+                /* Down */
+                t = max(y1, y2);
+                y1 = min(y1, y2);
+                y2 = max(t + d, y1);
+                fixAspectRatio(true);
+                break;
+            default:
+                return;
+            }
+
+            doResize();
+        }
+        else {
+            /* Move selection */
+            
+            x1 = min(x1, x2);
+            y1 = min(y1, y2);
+
+            switch (key) {
+            case 37:
+                /* Left */
+                doMove(max(x1 - d, left), y1);
+                break;
+            case 38:
+                /* Up */
+                doMove(x1, max(y1 - d, top));
+                break;
+            case 39:
+                /* Right */
+                doMove(x1 + min(d, imgWidth - selX(x2)), y1);
+                break;
+            case 40:
+                /* Down */
+                doMove(x1, y1 + min(d, imgHeight - selY(y2)));
+                break;
+            default:
+                return;
+            }
+        }
+
+        return false;
+    };
+
+    /**
+     * Set plugin options
+     * 
+     * @param newOptions
+     *            The new options object
+     */
+    function setOptions(newOptions) {
+        if (newOptions.parent)
+            ($parent = $(newOptions.parent)).append($box).append($outer);
+        
+        /* Merge the new options with the existing ones */
+        $.extend(options, newOptions);
+
+        adjust();
+
+        if (newOptions.handles != null) {
+            /* Recreate selection area handles */
+            $handles.remove();
+            $handles = $([]);
+
+            i = newOptions.handles ? newOptions.handles == 'corners' ? 4 : 8 : 0;
+
+            while (i--)
+                $handles = $handles.add(div());
+            
+            /* Add a class to handles and set the CSS properties */
+            $handles.addClass(options.classPrefix + '-handle').css({
+                position: 'absolute',
+                /*
+                 * The font-size property needs to be set to zero, otherwise
+                 * Internet Explorer makes the handles too large
+                 */
+                fontSize: 0,
+                zIndex: zIndex + 1 || 1
+            });
+            
+            /*
+             * If handle width/height has not been set with CSS rules, set the
+             * default 5px
+             */
+            if (!parseInt($handles.css('width')) >= 0)
+                $handles.width(5).height(5);
+        }
+
+        /* Calculate scale factors */
+        scaleX = options.imageWidth / imgWidth || 1;
+        scaleY = options.imageHeight / imgHeight || 1;
+
+        /* Set selection */
+        if (newOptions.x1 != null) {
+            setSelection(newOptions.x1, newOptions.y1, newOptions.x2,
+                newOptions.y2);
+            newOptions.show = !newOptions.hide;
+        }
+
+        if (newOptions.keys)
+            /* Enable keyboard support */
+            options.keys = $.extend({ shift: 1, ctrl: 'resize' },
+                newOptions.keys);
+
+        /* Add classes to plugin elements */
+        $outer.addClass(options.classPrefix + '-outer');
+        $area.addClass(options.classPrefix + '-selection');
+        for (i = 0; i++ < 4;)
+            $($border[i-1]).addClass(options.classPrefix + '-border' + i);
+
+        /* Append all the selection area elements to the container box */
+        $box.append($area.add($border)).append($handles);
+
+        if (msie) {
+            if (o = ($outer.css('filter')||'').match(/opacity=(\d+)/))
+                $outer.css('opacity', o[1]/100);
+            if (o = ($border.css('filter')||'').match(/opacity=(\d+)/))
+                $border.css('opacity', o[1]/100);
+        }
+        
+        if (newOptions.hide)
+            hide($box.add($outer));
+        else if (newOptions.show && imgLoaded) {
+            shown = true;
+            $box.add($outer).fadeIn(options.fadeDuration||0)
+            doUpdate();
+        }
+
+        /* Calculate the aspect ratio factor */
+        aspectRatio = (d = (options.aspectRatio || '').split(/:/))[0] / d[1];
+
+        $img.add($outer).off('mousedown touchstart', imgMouseDown);
+        
+        if (options.disable || options.enable === false) {
+            /* Disable the plugin */
+            $box.off({ 'mousemove touchmove': areaMouseMove,
+                'mousedown touchstart': areaMouseDown });
+            $(window).off('resize', windowResize);
+        }
+        else {
+            if (options.enable || options.disable === false) {
+                /* Enable the plugin */
+                if (options.resizable || options.movable)
+                    $box.on({ 'mousemove touchmove': areaMouseMove,
+                        'mousedown touchstart': areaMouseDown });
+    
+                $(window).resize(windowResize);
+            }
+
+            if (!options.persistent)
+                $img.add($outer).on('mousedown touchstart', imgMouseDown);
+        }
+        
+        options.enable = options.disable = undefined;
+    }
+    
+    /**
+     * Remove plugin completely
+     */
+    this.remove = function () {
+        /*
+         * Call setOptions with { disable: true } to unbind the event handlers
+         */
+        setOptions({ disable: true });
+        $box.add($outer).remove();
+    };
+    
+    /*
+     * Public API
+     */
+    
+    /**
+     * Get current options
+     * 
+     * @return An object containing the set of options currently in use
+     */
+    this.getOptions = function () { return options; };
+    
+    /**
+     * Set plugin options
+     * 
+     * @param newOptions
+     *            The new options object
+     */
+    this.setOptions = setOptions;
+    
+    /**
+     * Get the current selection
+     * 
+     * @param noScale
+     *            If set to <code>true</code>, scaling is not applied to the
+     *            returned selection
+     * @return Selection object
+     */
+    this.getSelection = getSelection;
+    
+    /**
+     * Set the current selection
+     * 
+     * @param x1
+     *            X coordinate of the upper left corner of the selection area
+     * @param y1
+     *            Y coordinate of the upper left corner of the selection area
+     * @param x2
+     *            X coordinate of the lower right corner of the selection area
+     * @param y2
+     *            Y coordinate of the lower right corner of the selection area
+     * @param noScale
+     *            If set to <code>true</code>, scaling is not applied to the
+     *            new selection
+     */
+    this.setSelection = setSelection;
+    
+    /**
+     * Cancel selection
+     */
+    this.cancelSelection = cancelSelection;
+    
+    /**
+     * Update plugin elements
+     * 
+     * @param resetKeyPress
+     *            If set to <code>false</code>, this instance's keypress
+     *            event handler is not activated
+     */
+    this.update = doUpdate;
+
+    /* Do the dreaded browser detection */
+    var msie = (/msie ([\w.]+)/i.exec(ua)||[])[1],
+        safari = /webkit/i.test(ua) && !/chrome/i.test(ua);
+
+    /* 
+     * Traverse the image's parent elements (up to <body>) and find the
+     * highest z-index
+     */
+    $p = $img;
+
+    while ($p.length) {
+        zIndex = max(zIndex,
+            !isNaN($p.css('z-index')) ? $p.css('z-index') : zIndex);
+        /*
+         * If the parent element is not set explicitly, check if any of the
+         * ancestor elements has fixed position
+         */ 
+        if (!options.parent && $p.css('position') == 'fixed')
+            position = 'fixed';
+
+        $p = $p.parent(':not(body)');
+    }
+
+    /*
+     * If z-index is given as an option, it overrides the one found by the
+     * above loop
+     */
+    zIndex = options.zIndex || zIndex;
+
+    /*
+     * In MSIE and WebKit, we need to use the keydown event instead of keypress
+     */
+    $.imgAreaSelect.keyPress = msie || safari ? 'keydown' : 'keypress';
+
+    $box.add($outer).hide().css({ position: position, overflow: 'hidden',
+        zIndex: zIndex || '0' });
+    $box.css({ zIndex: zIndex + 2 || 2 });
+    $area.add($border).css({ position: 'absolute', fontSize: 0 });
+    
+    /*
+     * If the image has been fully loaded, or if it is not really an image (eg.
+     * a div), call imgLoad() immediately; otherwise, bind it to be called once
+     * on image load event.
+     */
+    img.complete || img.readyState == 'complete' || !$img.is('img') ?
+        imgLoad() : $img.one('load', imgLoad);
+
+    /* 
+     * MSIE 9.0 doesn't always fire the image load event -- resetting the src
+     * attribute seems to trigger it. The check is for version 7 and above to
+     * accommodate for MSIE 9 running in compatibility mode.
+     */
+    if (!imgLoaded && msie && msie >= 7)
+        img.src = img.src;
+};
+
+/**
+ * Invoke imgAreaSelect on a jQuery object containing the image(s)
+ * 
+ * @param options
+ *            Options object
+ * @return The jQuery object or a reference to imgAreaSelect instance (if the
+ *         <code>instance</code> option was specified)
+ */
+$.fn.imgAreaSelect = function (options) {
+    options = options || {};
+
+    this.each(function () {
+        /* Is there already an imgAreaSelect instance bound to this element? */
+        if ($(this).data('imgAreaSelect')) {
+            /* Yes there is -- is it supposed to be removed? */
+            if (options.remove) {
+                /* Remove the plugin */
+                $(this).data('imgAreaSelect').remove();
+                $(this).removeData('imgAreaSelect');
+            }
+            else
+                /* Reset options */
+                $(this).data('imgAreaSelect').setOptions(options);
+        }
+        else if (!options.remove) {
+            /* No exising instance -- create a new one */
+            
+            /*
+             * If neither the "enable" nor the "disable" option is present, add
+             * "enable" as the default
+             */ 
+            if (options.enable === undefined && options.disable === undefined)
+                options.enable = true;
+
+            $(this).data('imgAreaSelect', new $.imgAreaSelect(this, options));
+        }
+    });
+    
+    if (options.instance)
+        /*
+         * Return the imgAreaSelect instance bound to the first element in the
+         * set
+         */
+        return $(this).data('imgAreaSelect');
+
+    return this;
+};
+
+})(jQuery);
