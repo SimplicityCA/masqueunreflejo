@@ -11,6 +11,7 @@
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="dist/styles/master.css" rel="stylesheet">
+    
 <!-- endbuild -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,17 +41,19 @@
             </div>
         
             <div id="efect-content" class="efect-content col-xs-12" style="display:none;">
-                <div class="col-sm-2 col-xs-12 efects-container">
-                    <a class="btn btn-success btn-lg btn-block" href="#">Efecto 1</a>
-                    <a class="btn btn-info btn-lg btn-block" href="#">Efecto 2</a>
-                     <a class="btn btn-warning btn-lg btn-block" href="#">Efecto 3</a>
-                     <a class="btn btn-danger btn-lg btn-block" href="#">Efecto 4</a>
-                </div>
-                <div class="col-sm-10 col-xs-12">
+                <div class="col-sm-10 col-xs-12 col-md-push-2">
                     <canvas id="drawCanvas" style="border:1px solid #000000;"  width="600" height="280" class=" col-xs-12 col-sm-8 col-sm-offset-2">
                         Your browser does not support the HTML5 canvas tag.
                     </canvas>
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2 button-container">
+                        <section id="colorSwatch">
+                            <input type="radio" name="color" id="color01" data-color="gold" checked><label for="color01"></label> 
+                            <input type="radio" name="color" id="color02" data-color="darkorange">  <label for="color02"></label>  
+                            <input type="radio" name="color" id="color03" data-color="navy">        <label for="color03"></label>  
+                            <input type="radio" name="color" id="color04" data-color="yellowgreen"> <label for="color04"></label>  
+                            <input type="radio" name="color" id="color05" data-color="firebrick">   <label for="color05"></label>  
+                            <input type="radio" name="color" id="color06" data-color="powderblue">  <label for="color06"></label> 
+                        </section>
                         <div class="col-sm-6">
                             <a id="back" class="btn btn-primary btn-common btn-lg btn-block" href="#">Atr&aacute;s</a>
                         </div>
@@ -59,6 +62,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-2 col-xs-12 efects-container col-md-pull-10 ">
+                    <a class="btn btn-success btn-lg btn-block" href="#">Efecto 1</a>
+                    <a class="btn btn-info btn-lg btn-block" href="#">Efecto 2</a>
+                     <a class="btn btn-warning btn-lg btn-block" href="#">Efecto 3</a>
+                     <a class="btn btn-danger btn-lg btn-block" href="#">Efecto 4</a>
+                </div>
+                
+                
+                
             </div>
         </div>
     </div>
@@ -72,8 +84,8 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- endbuild -->
     <script src="js/pubnub-3.15.2.min.js"></script>
-    <script src="js/drawCanvas.js"></script>
 
+    <script src="js/drawcanvas.js"></script>
     <script>
         $(document).ready(function(){
             $("#next").on("click",function(){
