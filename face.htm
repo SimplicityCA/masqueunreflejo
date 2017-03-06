@@ -63,6 +63,9 @@
     position: absolute;
     top: -1000px;
   }
+  .face{
+  	border: 1px solid black;
+  }
 		</style>
 		<script type="text/javascript" async="" src="js/ga.js"></script><script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -110,10 +113,12 @@
   <script src="js/tracker/face-min.js"></script>
   <script src="js/tracker/eye-min.js"></script>
   <script src="js/tracker/mouth-min.js"></script>
+  <script src="js/jquery.facedetection.min.js"></script>
 		<div id="content">
 	<p><input type="button" class="btn" value="start" onclick="animateClean()">
 			<input type="button" class="btn" value="manually select face" onclick="selectBox()">
 			<input type="button" class="btn" value="tracker" onclick="tracker()">
+			<input type="button" class="btn" value="facedetect" onclick="facedetect()">
 <!-- 			<input type="file" class="btn" id="files" name="files[]"> -->
 			<input type="file" id="file-input">
 <!-- 			<input id="test" type="button" class="btn" value="rotate" > -->
@@ -245,6 +250,35 @@
         rect.style.left = (img.offsetLeft + x) + 'px';
         rect.style.top = (img.offsetTop + y) + 'px';
       };
+					}
+					function facedetect(){
+						    $('#image').faceDetection({
+        complete: function (faces) {
+            console.log(faces);
+
+                $('.face').remove();
+                $('#image').faceDetection({
+                    complete: function (faces) {                        
+                        for (var i = 0; i < faces.length; i++) {
+                            $('<div>', {
+                                'class':'face',
+                                'css': {
+                                    'position': 'absolute',
+                                    'left':     faces[i].x * faces[i].scaleX + 'px',
+                                    'top':      faces[i].y * faces[i].scaleY + 'px',
+                                    'width':    faces[i].width  * faces[i].scaleX + 'px',
+                                    'height':   faces[i].height * faces[i].scaleY + 'px'
+                                }
+                            })
+                            .insertAfter(this);
+                        }
+                    },
+                    error:function (code, message) {
+                        alert('Error: ' + message);
+                    }
+                });
+        }
+    });
 					}
 			</script>
 		</div><canvas width="11px" height="781px" id="renderCanvas" style="display:none;"></canvas>

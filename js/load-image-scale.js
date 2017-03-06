@@ -103,6 +103,8 @@
     destWidth,
     destHeight
   ) {
+    // canvas.setAttribute("width","625")
+    // canvas.setAttribute("height","500")
     canvas.getContext('2d').drawImage(
       img,
       sourceX,
@@ -115,6 +117,8 @@
       destHeight
     )
     canvas.setAttribute("id", "image")
+    // canvas.setAttribute("width","625")
+    // canvas.setAttribute("height","500")
     return canvas
   }
 
