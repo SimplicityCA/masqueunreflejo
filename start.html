@@ -61,7 +61,7 @@
                             <a  class="btn btn-primary btn-common btn-lg btn-block" onclick="rotate()" href="#">Rotar</a>
                         </div>
                         <div class="col-sm-6">
-                            <a class="btn btn-primary btn-lg btn-block" href="finish.html">Compartir en fb</a>
+                            <a class="btn btn-primary btn-lg btn-block"  onclick="postCanvasToFacebook()" >Compartir en fb</a>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,8 @@
     <script src="js/load-image-orientation.js"></script>
     <script src="js/vendor/jquery.Jcrop.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/facebook.js"></script>
+    <script src="js/base64binary.js"></script>
     <script>
         $(document).ready(function(){
             $("#next").on("click",function(){

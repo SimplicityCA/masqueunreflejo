@@ -114,10 +114,11 @@
   <script src="js/tracker/eye-min.js"></script>
   <script src="js/tracker/mouth-min.js"></script>
   <script src="js/jquery.facedetection.min.js"></script>
-  <script src="js/sketch.min.js"></script>
+
 		<div id="content">
 	<p><input type="button" class="btn" value="start" onclick="animateClean()">
 			<input type="button" class="btn" value="manually select face" onclick="selectBox()">
+			<input type="button" class="btn" value="compartir" onclick="postCanvasToFacebook()">
 <!-- 			<input type="button" class="btn" value="tracker" onclick="tracker()">
 			<input type="button" class="btn" value="facedetect" onclick="facedetect()"> -->
 			<input type="button" class="btn" value="rotate" onclick="rotate()">
@@ -129,12 +130,7 @@
 	<button type="button" id="edit">Edit</button>
 	<button type="button" id="crop">Crop</button>
 </p> -->
-<p>
-<div class="tools">
-  <a href="#tools_sketch" data-tool="marker">Marker</a>
-  <a href="#tools_sketch" data-tool="eraser">Eraser</a>
-</div>
-</p>
+
 			<div id="container">
 
 				  <canvas id="image" width="625" height="500"></canvas> 
@@ -323,6 +319,7 @@
 }
 			</script>
 		</div><canvas width="11px" height="781px" id="renderCanvas" style="display:none;"></canvas>
-	
+	      <script src="js/facebook.js"></script>
+    <script src="js/base64binary.js"></script>
 
 </body></html>
