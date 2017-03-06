@@ -51,7 +51,7 @@ $(function () {
     if (!(img.src || img instanceof HTMLCanvasElement)) {
       content = $('<span>Loading image file failed</span>')
     } else {
-      $( "#image" ).replaceWith(img)
+      // $( "#image" ).replaceWith(img)
       overlayCC.clearRect(0, 0, 720, 576)
       document.getElementById('convergence').innerHTML = "";
       ctrack.reset();
@@ -81,13 +81,14 @@ $(function () {
   }
 
   function dropChangeHandler (e) {
+
     e.preventDefault()
     e = e.originalEvent
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: 625,
-       maxHeight: 500,
+      maxWidth: 600,
+       maxHeight: 280,
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,

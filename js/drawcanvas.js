@@ -1,7 +1,8 @@
 (function() {
   /* Canvas */
 
-  var canvas = document.getElementById('drawCanvas');
+  var canvas = document.getElementById('image');
+  console.log(canvas);
   var ctx = canvas.getContext('2d');
   var color = document.querySelector(':checked').getAttribute('data-color');
 
@@ -48,10 +49,10 @@
       if(m.occupancy > 1){
         document.getElementById('unit').textContent = 'doodlers';
       }
-        document.getElementById('occupancy').textContent = m.occupancy;
-        var p = document.getElementById('occupancy').parentNode;
-        p.classList.add('anim');
-        p.addEventListener('transitionend', function(){p.classList.remove('anim');}, false);
+        // document.getElementById('occupancy').textContent = m.occupancy;
+        // var p = document.getElementById('occupancy').parentNode;
+        // p.classList.add('anim');
+        // p.addEventListener('transitionend', function(){p.classList.remove('anim');}, false);
       }
   });
 
@@ -81,15 +82,15 @@
     }
     
     // Get Older and Past Drawings!
-    if(drawHistory) {
-      pubnub.history({
-        channel  : channel,
-        count    : 50,
-        callback : function(messages) {
-          pubnub.each( messages[0], drawFromStream );
-        }
-      });
-  }
+  //   if(drawHistory) {
+  //     pubnub.history({
+  //       channel  : channel,
+  //       count    : 50,
+  //       callback : function(messages) {
+  //         pubnub.each( messages[0], drawFromStream );
+  //       }
+  //     });
+  // }
     var isActive = false;
     var plots = [];
 

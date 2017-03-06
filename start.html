@@ -31,18 +31,21 @@
         </div>
         <div class="row">
             <div id="canvas-content" class="canvas-content col-xs-12">
-            	<canvas id="picture" style="border:1px solid #000000;" class="col-xs-6 col-xs-offset-3">
+<!--             	<canvas id="picture" style="border:1px solid #000000;" class="col-xs-6 col-xs-offset-3">
                     Your browser does not support the HTML5 canvas tag.
-                </canvas>
+                </canvas> -->
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 button-container">
-                    <a class="btn btn-success btn-lg btn-block" href="#">Subir Foto</a>
-                    <a id="next" class="btn btn-primary btn-common btn-lg btn-block" href="#">Siguiente</a>
+                    <!-- <a class="btn btn-success btn-lg btn-block" href="#">Subir Foto</a> -->
+                    <a id="next" class="btn btn-primary btn-common btn-lg btn-block" href="#">Comenzar</a>
                 </div>
             </div>
         
             <div id="efect-content" class="efect-content col-xs-12" style="display:none;">
                 <div class="col-sm-10 col-xs-12 col-md-push-2">
-                    <canvas id="drawCanvas" style="border:1px solid #000000;"  width="600" height="280" class=" col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="col-sm-6 canvas-container">
+                        <input type="file" id="file-input">
+                    </div>
+                    <canvas id="image" style="border:1px solid #000000;"  width="600" height="280" class=" col-xs-12 col-sm-8 col-sm-offset-2">
                         Your browser does not support the HTML5 canvas tag.
                     </canvas>
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2 button-container">
@@ -55,7 +58,7 @@
                             <input type="radio" name="color" id="color06" data-color="powderblue">  <label for="color06"></label> 
                         </section>
                         <div class="col-sm-6">
-                            <a id="back" class="btn btn-primary btn-common btn-lg btn-block" href="#">Atr&aacute;s</a>
+                            <a  class="btn btn-primary btn-common btn-lg btn-block" onclick="rotate()" href="#">Rotar</a>
                         </div>
                         <div class="col-sm-6">
                             <a class="btn btn-primary btn-lg btn-block" href="finish.html">Compartir en fb</a>
@@ -85,7 +88,16 @@
 <!-- endbuild -->
     <script src="js/pubnub-3.15.2.min.js"></script>
 
-    <script src="js/drawcanvas.js"></script>
+    <script src="js/drawcanvas.js"></script> 
+    <script src="js/load-image.js"></script>
+    <script src="js/load-image-scale.js"></script>
+    <script src="js/load-image-meta.js"></script>
+    <script src="js/load-image-fetch.js"></script>
+    <script src="js/load-image-exif.js"></script>
+    <script src="js/load-image-exif-map.js"></script>
+    <script src="js/load-image-orientation.js"></script>
+    <script src="js/vendor/jquery.Jcrop.js"></script>
+    <script src="js/app.js"></script>
     <script>
         $(document).ready(function(){
             $("#next").on("click",function(){
@@ -97,7 +109,41 @@
                 $("#efect-content").hide();
             })
         })
+        function rotate () {
+            var canvas = document.getElementById("image");
+            var context = canvas.getContext("2d");
+            var cw = canvas.width;
+            var ch = canvas.height;
+            var myImageData, rotating = false;
+    if (!rotating) {
 
+        rotating = true;            
+        // store current data to an image
+        myImageData = new Image();
+        myImageData.src = canvas.toDataURL();
+
+       myImageData.onload = function () {
+            // reset the canvas with new dimensions
+            canvas.width = ch;
+            canvas.height = cw;
+            cw = canvas.width;
+            ch = canvas.height;
+
+            context.save();
+            // translate and rotate
+            context.translate(cw, ch / cw);
+            context.rotate(Math.PI / 2);
+            // draw the previows image, now rotated
+            context.drawImage(myImageData, 0, 0);               
+            context.restore();
+
+            // clear the temporary image
+            myImageData = null;
+
+            rotating = false;               
+        }
+    }
+}
     </script>
 </body>
 
