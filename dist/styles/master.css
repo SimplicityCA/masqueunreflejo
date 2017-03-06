@@ -173,7 +173,7 @@ body {
   border-color: #F5AA7F;
   background-image: none;
   /*padding:30px;
-    font-size:26px;*/
+      font-size:26px;*/
 }
 .btn-common:hover,
 .btn-common:focus {
@@ -194,6 +194,9 @@ ul {
   img {
     width: 100%;
   }
+}
+.button-container {
+  margin-top: 10px;
 }
 @media (max-width: 767px) {
   .second-module-container {
