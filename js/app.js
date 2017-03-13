@@ -81,7 +81,7 @@ $(function () {
   }
 
   function dropChangeHandler (e) {
-    $('#auto-r').show();
+    // $('#auto-r').show();
      animateClean()
     e.preventDefault()
     e = e.originalEvent
