@@ -82,12 +82,13 @@ $(function () {
 
   function dropChangeHandler (e) {
     $('#auto-r').show();
+     animateClean()
     e.preventDefault()
     e = e.originalEvent
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: 625,
+      maxWidth: 400,
        maxHeight: 300,
       canvas: true,
       pixelRatio: window.devicePixelRatio,
@@ -100,6 +101,7 @@ $(function () {
     exifNode.hide()
     thumbNode.hide()
     displayImage(file, options)
+
   }
 
   // Hide URL/FileReader API requirement message in capable browsers:
