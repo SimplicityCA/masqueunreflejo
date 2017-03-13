@@ -138,6 +138,15 @@
 				var overlay2CC = overlay2.getContext('2d');
 				var countLoops = 0;
 				var currentPoint = [];
+				//face elements
+				var faceBorder = [];
+				var leftEye = [];
+				var rightEye = [];
+				var leftEyebrow = [];
+				var rightEyebrow = [];
+				var noseSeptum = [];
+				var noseBorder = [];
+				var mouth = [];
 			
 				var img = new Image();
 				img.onload = function() {
@@ -205,6 +214,7 @@
 								overlay2CC.fillStyle="#FF0000";
 								overlay2CC.fillRect(position[0],position[1],3,3);
 								overlay2CC.fillStyle="#00FF00";
+								faceBorder.push(position);
 							}
 
 							// Left Eyebrow
@@ -213,6 +223,7 @@
 								overlay2CC.fillStyle="#00FFFF";
 								overlay2CC.fillRect(position[0],position[1],3,3);
 								overlay2CC.fillStyle="#666FFF";
+								leftEyebrow.push(position);
 							}
 
 							// Right Eyebrow
@@ -221,6 +232,7 @@
 								overlay2CC.fillStyle="#666FFF";
 								overlay2CC.fillRect(position[0],position[1],3,3);
 								overlay2CC.fillStyle="#cc66ff";
+								rightEyebrow.push(position);
 							}
 
 							// Right Eye
@@ -229,6 +241,7 @@
 								overlay2CC.fillStyle="#cc66ff";
 								overlay2CC.fillRect(position[0],position[1],3,3);
 								overlay2CC.fillStyle="#22FF11";
+								rightEye.push(position);
 							}
 
 							// Left Eye
@@ -237,15 +250,22 @@
 								overlay2CC.fillStyle="#22FF11";
 								overlay2CC.fillRect(position[0],position[1],3,3);
 								overlay2CC.fillStyle="#99cc00";
+								leftEye.push(position);
 							}
 
 							// Nose
 							if (pointIndex > 32 && pointIndex <= 43) {	
-								// first point in this range is first septum point
 						    	console.log(position);
 								overlay2CC.fillStyle="#99cc00";
 								overlay2CC.fillRect(position[0],position[1],4,4);
 								overlay2CC.fillStyle="#ffff00";
+								if (pointIndex == 33 || pointIndex == 43) {
+									noseSeptum.push(position);
+								}
+								else {
+									noseBorder.push(position);
+								}
+								// first point in this range is first septum point
 								//last point in this range is middle point of septum
 							}
 
@@ -256,6 +276,12 @@
 								overlay2CC.fillStyle="#66ff99";
 								overlay2CC.fillRect(position[0],position[1],4,4);
 								overlay2CC.fillStyle="#cc6600";
+								if (pointIndex == 62) {
+									noseSeptum.push(position);
+								}
+								else {
+									mouth.push(position);
+								}
 								// point 62 is last point of septum	
 							}
 
@@ -266,6 +292,7 @@
 								overlay2CC.fillStyle="#cc6600";
 								overlay2CC.fillRect(position[0],position[1],4,4);
 								overlay2CC.fillStyle="#3366ff";
+								rightEye.push(position);
 								// point 62 is last point of septum	
 							}
 
@@ -275,6 +302,7 @@
 								overlay2CC.fillStyle="#3366ff";
 								overlay2CC.fillRect(position[0],position[1],4,4);
 								overlay2CC.fillStyle="#000000";
+								leftEye.push(position);
 							}
 							pointIndex++;
 						});
