@@ -239,12 +239,42 @@
 								overlay2CC.fillStyle="#99cc00";
 							}
 
-							// Septum
-							if (pointIndex > 32 && pointIndex <= 41) {	
+							// Nose
+							if (pointIndex > 32 && pointIndex <= 43) {	
+								// first point in this range is first septum point
 						    	console.log(position);
 								overlay2CC.fillStyle="#99cc00";
 								overlay2CC.fillRect(position[0],position[1],4,4);
 								overlay2CC.fillStyle="#ffff00";
+								//last point in this range is middle point of septum
+							}
+
+							// Mouth
+							// if (pointIndex > 43 && pointIndex <= (currentPoint.length - 1)) {	
+							if (pointIndex > 43 && pointIndex <= 62) {	
+						    	console.log(position);
+								overlay2CC.fillStyle="#66ff99";
+								overlay2CC.fillRect(position[0],position[1],4,4);
+								overlay2CC.fillStyle="#cc6600";
+								// point 62 is last point of septum	
+							}
+
+							// Eyes again: Right Eye of character
+							// if (pointIndex > 43 && pointIndex <= (currentPoint.length - 1)) {	
+							if (pointIndex > 62 && pointIndex <= 66) {	
+						    	console.log(position);
+								overlay2CC.fillStyle="#cc6600";
+								overlay2CC.fillRect(position[0],position[1],4,4);
+								overlay2CC.fillStyle="#3366ff";
+								// point 62 is last point of septum	
+							}
+
+							// Eyes again: Left Eye of character
+							if (pointIndex > 66 && pointIndex <= (currentPoint.length - 1)) {		
+						    	console.log(position);
+								overlay2CC.fillStyle="#3366ff";
+								overlay2CC.fillRect(position[0],position[1],4,4);
+								overlay2CC.fillStyle="#000000";
 							}
 							pointIndex++;
 						});
@@ -305,6 +335,7 @@
 										canvas.setAttribute('height', img.height);
 										cc.drawImage(img,0,0,img.width, img.height);
 									}
+									overlay2CC.clearRect(0, 0, 720, 576);
 								}
 								img.src = e.target.result;
 							};
