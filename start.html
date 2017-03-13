@@ -134,6 +134,10 @@
                 $("#canvas-content").show();
                 $("#efect-content").hide();
             })
+          $("#overlay").on("click",function(){
+                    $('#image').css('z-index',20);
+                    $('#overlay').css('z-index',10);
+            })  
         })
         function rotate () {
             var canvas = document.getElementById("image");
@@ -195,7 +199,8 @@
                 var drawRequest;
                 
                 function animateClean() {
-                    
+                    $('#image').css('z-index',10);
+                    $('#overlay').css('z-index',20);
                     ctrack.start(document.getElementById('image'));
                     drawLoop();
                 }
@@ -331,7 +336,7 @@
                                 img.onload = function() {
                                     if (img.height > 500 || img.width > 700) {
                                         var rel = img.height/img.width;
-                                        var neww = 700;
+                                        var neww = 625;
                                         var newh = neww*rel;
                                         if (newh > 500) {
                                             newh = 500;
