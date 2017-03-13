@@ -306,6 +306,16 @@
 							}
 							pointIndex++;
 						});
+						if (currentPoint) {
+							console.log('will paint by element');
+							if (faceBorder[0]) {
+								overlay2CC.clearRect(0, 0, 720, 576);
+								rightEye.forEach(function(position) {
+									overlay2CC.fillStyle="#3366ff";
+									overlay2CC.fillRect(position[0],position[1],4,4);
+								});
+							}
+						}
 					}
 				}, false);
 				
