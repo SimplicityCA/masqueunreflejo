@@ -112,7 +112,7 @@
     <script src="js/Stats.js"></script>
     <link rel="stylesheet" type="text/css" href="js/imgareaselect-default.css">
     <script src="js/drawcanvas.js"></script> 
-    <script src="js/load-image.js"></script>
+<!--     <script src="js/load-image.js"></script>
     <script src="js/load-image-scale.js"></script>
     <script src="js/load-image-meta.js"></script>
     <script src="js/load-image-fetch.js"></script>
@@ -120,7 +120,7 @@
     <script src="js/load-image-exif-map.js"></script>
     <script src="js/load-image-orientation.js"></script>
     <script src="js/vendor/jquery.Jcrop.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> -->
     <script src="js/facebook.js"></script>
     <script src="js/base64binary.js"></script>
     <script src="js/jquery.imgareaselect.pack.js"></script>
@@ -316,6 +316,70 @@
         }
     });
                     }
+                                    // function to start showing images
+                function loadImage() {
+                    if (fileList.indexOf(fileIndex) < 0) {
+                        var reader = new FileReader();
+                        reader.onload = (function(theFile) {
+                            return function(e) {
+                                // check if positions already exist in storage
+                            
+                                // Render thumbnail.
+                                var canvas = document.getElementById('image')
+                                var cc = canvas.getContext('2d');
+                                var img = new Image();
+                                img.onload = function() {
+                                    if (img.height > 500 || img.width > 700) {
+                                        var rel = img.height/img.width;
+                                        var neww = 700;
+                                        var newh = neww*rel;
+                                        if (newh > 500) {
+                                            newh = 500;
+                                            neww = newh/rel;
+                                        }
+                                        canvas.setAttribute('width', neww);
+                                        canvas.setAttribute('height', newh);
+                                        cc.drawImage(img,0,0,neww, newh);
+                                    } else {
+                                        canvas.setAttribute('width', img.width);
+                                        canvas.setAttribute('height', img.height);
+                                        cc.drawImage(img,0,0,img.width, img.height);
+                                    }
+                                }
+                                img.src = e.target.result;
+                            };
+                        })(fileList[fileIndex]);
+                        reader.readAsDataURL(fileList[fileIndex]);
+                        overlayCC.clearRect(0, 0, 720, 576);
+                        document.getElementById('convergence').innerHTML = "";
+                        ctrack.reset();
+                    }
+
+                }
+
+                // set up file selector and variables to hold selections
+                var fileList, fileIndex;
+                if (window.File && window.FileReader && window.FileList) {
+                    function handleFileSelect(evt) {
+                        var files = evt.target.files;
+                        fileList = [];
+                        for (var i = 0;i < files.length;i++) {
+                            if (!files[i].type.match('image.*')) {
+                                continue;
+                            }
+                            fileList.push(files[i]);
+                        }
+                        if (files.length > 0) {
+                            fileIndex = 0;
+                        }
+                        
+                        loadImage();
+                    }
+                    document.getElementById('file-input').addEventListener('change', handleFileSelect, false);
+                } else {
+                    $('#files').addClass("hide");
+                    $('#loadimagetext').addClass("hide");
+                }
             </script>
     <canvas width="11px" height="781px" id="renderCanvas" style="display:none;"></canvas>
 </body>
