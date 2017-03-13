@@ -135,45 +135,47 @@
                 $("#efect-content").hide();
             })
           $("#overlay").on("click",function(){
+            //click on overlay to draw canvas
                     $('#image').css('z-index',20);
                     $('#overlay').css('z-index',10);
             })  
         })
+        //rotate canvas
         function rotate () {
             var canvas = document.getElementById("image");
             var context = canvas.getContext("2d");
             var cw = canvas.width;
             var ch = canvas.height;
             var myImageData, rotating = false;
-    if (!rotating) {
+        if (!rotating) {
 
-        rotating = true;            
-        // store current data to an image
-        myImageData = new Image();
-        myImageData.src = canvas.toDataURL();
+            rotating = true;            
+            // store current data to an image
+            myImageData = new Image();
+            myImageData.src = canvas.toDataURL();
 
-       myImageData.onload = function () {
-            // reset the canvas with new dimensions
-            canvas.width = ch;
-            canvas.height = cw;
-            cw = canvas.width;
-            ch = canvas.height;
+            myImageData.onload = function () {
+                // reset the canvas with new dimensions
+                canvas.width = ch;
+                canvas.height = cw;
+                cw = canvas.width;
+                ch = canvas.height;
 
-            context.save();
-            // translate and rotate
-            context.translate(cw, ch / cw);
-            context.rotate(Math.PI / 2);
-            // draw the previows image, now rotated
-            context.drawImage(myImageData, 0, 0);               
-            context.restore();
+                context.save();
+                // translate and rotate
+                context.translate(cw, ch / cw);
+                context.rotate(Math.PI / 2);
+                // draw the previows image, now rotated
+                context.drawImage(myImageData, 0, 0);               
+                context.restore();
 
-            // clear the temporary image
-            myImageData = null;
+                // clear the temporary image
+                myImageData = null;
 
-            rotating = false;               
+                rotating = false;               
+            }
         }
     }
-}
     </script>
 
 
@@ -263,65 +265,11 @@
                     });
                 }
                 function convertCanvasToImage(canvas) {
-    var image = new Image();
-    image.src = canvas.toDataURL("image/png");
-    return image;
-}
-                    function tracker(){
-
-                              var img = convertCanvasToImage(document.getElementById('image'));
-
-      var tracker = new tracking.ObjectTracker(['face', 'eye', 'mouth']);
-      tracker.setStepSize(1.7);
-
-      tracking.track(img, tracker);
-
-      tracker.on('track', function(event) {
-        event.data.forEach(function(rect) {
-          window.plot(rect.x, rect.y, rect.width, rect.height);
-        });
-      });
-
-      window.plot = function(x, y, w, h) {
-        var rect = document.createElement('div');
-        document.querySelector('.demo-container').appendChild(rect);
-        rect.classList.add('rect');
-        rect.style.width = w + 'px';
-        rect.style.height = h + 'px';
-        rect.style.left = (img.offsetLeft + x) + 'px';
-        rect.style.top = (img.offsetTop + y) + 'px';
-      };
-                    }
-                    function facedetect(){
-                            $('#image').faceDetection({
-        complete: function (faces) {
-            console.log(faces);
-
-                $('.face').remove();
-                $('#image').faceDetection({
-                    complete: function (faces) {                        
-                        for (var i = 0; i < faces.length; i++) {
-                            $('<div>', {
-                                'class':'face',
-                                'css': {
-                                    'position': 'absolute',
-                                    'left':     faces[i].x * faces[i].scaleX + 'px',
-                                    'top':      faces[i].y * faces[i].scaleY + 'px',
-                                    'width':    faces[i].width  * faces[i].scaleX + 'px',
-                                    'height':   faces[i].height * faces[i].scaleY + 'px'
-                                }
-                            })
-                            .insertAfter(this);
-                        }
-                    },
-                    error:function (code, message) {
-                        alert('Error: ' + message);
-                    }
-                });
-        }
-    });
-                    }
-                                    // function to start showing images
+                    var image = new Image();
+                    image.src = canvas.toDataURL("image/png");
+                    return image;
+                }
+                // function to load images on canvas 
                 function loadImage() {
                     if (fileList.indexOf(fileIndex) < 0) {
                         var reader = new FileReader();
@@ -334,7 +282,7 @@
                                 var cc = canvas.getContext('2d');
                                 var img = new Image();
                                 img.onload = function() {
-                                    if (img.height > 500 || img.width > 700) {
+                                    if (img.height > 500 || img.width > 700) { //estos valores se podría mandar como parametros dependiendo del dispositivo
                                         var rel = img.height/img.width;
                                         var neww = 625;
                                         var newh = neww*rel;
