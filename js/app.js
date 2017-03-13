@@ -81,14 +81,14 @@ $(function () {
   }
 
   function dropChangeHandler (e) {
-
+    $('#auto-r').show();
     e.preventDefault()
     e = e.originalEvent
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: 600,
-       maxHeight: 280,
+      maxWidth: 625,
+       maxHeight: 300,
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,
