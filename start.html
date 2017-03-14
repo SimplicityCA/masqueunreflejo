@@ -317,7 +317,9 @@
                             };
                         })(fileList[fileIndex]);
                         reader.readAsDataURL(fileList[fileIndex]);
-                        overlayCC.clearRect(0, 0, 720, 576);
+                        overlayCC.clearRect(0, 0, 720, 576);                     // Establecer el color base en negro, totalmente opaco
+                        webgl.enable(webgl.DEPTH_TEST);                               // Habilitar prueba de profundidad
+                        webgl.depthFunc(webgl.LEQUAL); 
                         webgl.clear(webgl.COLOR_BUFFER_BIT|webgl.DEPTH_BUFFER_BIT);
                         document.getElementById('convergence').innerHTML = "";
                         ctrack.reset();
