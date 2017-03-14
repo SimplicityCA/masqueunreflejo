@@ -24,6 +24,7 @@ body {
   background-color: #F5AA7F;
   border-color: #F5AA7F;
   background-image: none;
+  margin-top: 5px;
   /*padding:30px;
       font-size:26px;*/
 }
@@ -48,20 +49,52 @@ ul {
   }
 }
 .button-container {
-  margin-top: 30%;
+  margin-top: 500px;
+}
+@media (max-width: 767px) {
+  .button-container {
+    margin-top: 330px;
+    margin-bottom: 10px;
+  }
 }
 canvas {
   border: 1px dotted silver;
 }
-#overlay {
-  position: absolute;
-  /*top: 0px;
-    left: 0px;*/
-}
+#overlay,
 #image {
   position: absolute;
   /*top: 0px;
     left: 0px;*/
+  width: 500px;
+  height: 500px;
+}
+@media (max-width: 767px) {
+  #overlay,
+  #image {
+    width: 320px;
+    height: 320px;
+  }
+}
+.down-buttons {
+  padding-left: 24px;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .down-buttons {
+    padding-left: 37px;
+  }
+}
+@media (min-width: 992px) {
+  .down-buttons {
+    padding-right: 0px;
+    padding-left: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .down-buttons {
+    padding-right: 34px;
+    padding-left: 17px;
+  }
 }
 #drawCanvas:hover,
 #drawCanvas:active {
