@@ -330,69 +330,24 @@
 									// 	iterations--;
 									// }
 								});
-
-								// Only right eyebrow extra painting
-								// var xEyebrowBeginning = rightEyebrow[0][0];
-								// var xEyebrowFinish = rightEyebrow[3][0];
-								// var yEyebrowBeginning = Math.min(rightEyebrow[0][1], rightEyebrow[1][1], rightEyebrow[2][1], rightEyebrow[3][1]);
-								// var yEyebrowFinish = Math.max(rightEyebrow[0][1], rightEyebrow[1][1], rightEyebrow[2][1], rightEyebrow[3][1]);
-								// var iterations = 1000;
-								// var xPosition = 0;
-								// var yPosition = 0;
-								// var canvasImageData = cc.getImageData(rightEyebrow[3][0], rightEyebrow[3][1], 1, 1);
-								// var imageData = canvasImageData.data;
-								// var rgba = 'rgba(' + imageData[0] + ', ' + imageData[1] + ', ' + imageData[2] + ', ' + (imageData[3] / 255) + ')';
-								// overlay2CC.fillStyle = rgba;
-								// while (iterations > 0) {
-								// 	console.log('enters iteration');
-								// 	xPosition = Math.random() * (xEyebrowFinish - xEyebrowBeginning) + xEyebrowBeginning;
-								// 	yPosition = Math.random() * (yEyebrowFinish - yEyebrowBeginning) + yEyebrowBeginning;
-								// 	overlay2CC.fillRect(xPosition,yPosition,1,1);
-								// 	// xToPaint++;
-								// 	// yToPaint++;
-								// 	iterations--;
-								// }
-
-								//Uni eyebrow
-
-								//rightEyebrow bounds
-								var xRightEyebrowBeginning = rightEyebrow[0][0];
-								var xRightEyebrowFinish = leftEyebrow[3][0];
-								var yRightEyebrowBeginning = Math.min(rightEyebrow[0][1], rightEyebrow[1][1], rightEyebrow[2][1], rightEyebrow[3][1]);
-								var yRightEyebrowFinish = Math.max(rightEyebrow[0][1], rightEyebrow[1][1], rightEyebrow[2][1], rightEyebrow[3][1]);
-								
-								//leftEyebrow bounds
-								var xLeftEyebrowBeginning = leftEyebrow[0][0];
-								var xLeftEyebrowFinish = leftEyebrow[3][0];
-								var yLeftEyebrowBeginning = Math.min(leftEyebrow[0][1], leftEyebrow[1][1], leftEyebrow[2][1], leftEyebrow[3][1]);
-								var yLeftEyebrowFinish = Math.max(leftEyebrow[0][1], leftEyebrow[1][1], leftEyebrow[2][1], leftEyebrow[3][1]);
-
-								//painting reference points of beginning and ending
-								overlay2CC.fillStyle = '#005500';
-								overlay2CC.font="20px Georgia";
-								// overlay2CC.fillText("Hello World!",10,50);
-								overlay2CC.fillText('1',rightEyebrow[0][0],10);
-								overlay2CC.fillText('2',rightEyebrow[3][0],10);
-								overlay2CC.fillText('3',leftEyebrow[0][0],10);
-								overlay2CC.fillText('4',leftEyebrow[3][0],10);
-
-								var iterations = 700;
+								var xEyebrowBeginning = rightEyebrow[0][0];
+								var xEyebrowFinish = rightEyebrow[3][0];
+								var yEyebrowBeginning = Math.min(rightEyebrow[0][1], rightEyebrow[1][1], rightEyebrow[2][1], rightEyebrow[3][1]);
+								var yEyebrowFinish = Math.max(rightEyebrow[0][1], rightEyebrow[1][1], rightEyebrow[2][1], rightEyebrow[3][1]);
+								var iterations = 1000;
 								var xPosition = 0;
 								var yPosition = 0;
 								var canvasImageData = cc.getImageData(rightEyebrow[3][0], rightEyebrow[3][1], 1, 1);
 								var imageData = canvasImageData.data;
 								var rgba = 'rgba(' + imageData[0] + ', ' + imageData[1] + ', ' + imageData[2] + ', ' + (imageData[3] / 255) + ')';
 								overlay2CC.fillStyle = rgba;
-								console.log('min x -- ' + rightEyebrow[3][0]);
-								console.log('max x -- ' + leftEyebrow[3][0]);
-								overlay2CC.fillText('iniX',rightEyebrow[3][0],40);
-								overlay2CC.fillText('endX',leftEyebrow[3][0],40);
 								while (iterations > 0) {
-									console.log('random min max -- ' + getRandomMinMax(5,10));
 									console.log('enters iteration');
-									xPosition = getRandomMinMax(rightEyebrow[3][0], leftEyebrow[3][0]);
-									yPosition = getRandomMinMax(yRightEyebrowBeginning + 5, yLeftEyebrowFinish - 5);
+									xPosition = Math.random() * (xEyebrowFinish - xEyebrowBeginning) + xEyebrowBeginning;
+									yPosition = Math.random() * (yEyebrowFinish - yEyebrowBeginning) + yEyebrowBeginning;
 									overlay2CC.fillRect(xPosition,yPosition,1,1);
+									// xToPaint++;
+									// yToPaint++;
 									iterations--;
 								}
 
@@ -405,10 +360,6 @@
 				document.addEventListener("clmtrackrIteration", function(event) {
 					stats.update();
 				}, false);
-
-				function getRandomMinMax(min, max) {
-					return Math.random() * (max - min) + min;
-				}
 
 				// manual selection of faces (with jquery imgareaselect plugin)
 				function selectBox() {
