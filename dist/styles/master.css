@@ -57,9 +57,6 @@ ul {
     margin-bottom: 10px;
   }
 }
-canvas {
-  border: 1px dotted silver;
-}
 #overlay,
 #image {
   position: absolute;
