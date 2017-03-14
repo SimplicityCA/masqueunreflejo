@@ -52,7 +52,7 @@ ul {
   }
 }
 .button-container {
-  margin-top: 650px;
+  margin-top: 485px;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -83,8 +83,8 @@ ul {
   #overlay,
   #image,
   #webgl {
-    /*width: 320px;
-      height: 320px;*/
+    width: 320px;
+    height: 320px;
   }
 }
 .down-buttons {
