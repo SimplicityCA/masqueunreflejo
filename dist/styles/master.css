@@ -123,3 +123,8 @@ ul {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 767px) {
+  .canvas-container {
+    padding-left: 0;
+  }
+}
