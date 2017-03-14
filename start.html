@@ -219,7 +219,7 @@
                     drawRequest = requestAnimFrame(drawLoop);
                     overlayCC.clearRect(0, 0, 720, 576);
                     if (ctrack.getCurrentPosition()) {
-                        ctrack.draw(overlay);
+                        //ctrack.draw(overlay);
                     }
                 }
                 
@@ -327,7 +327,7 @@
                         document.getElementById('convergence').innerHTML = "";
                         ctrack.reset();
                         
-                        $('#overlay').hide();
+                        // $('#overlay').hide();
                     }
 
                 }
@@ -555,7 +555,7 @@
                     overlayCC.clearRect(0, 0, 500, 375);
                     if (positions) {
                         // draw current grid
-                        ctrack.draw(overlay);
+                        //ctrack.draw(overlay);
                     }
                     // check whether mask has converged
                     var pn = ctrack.getConvergence();
