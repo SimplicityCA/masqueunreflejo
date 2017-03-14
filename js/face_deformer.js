@@ -17,6 +17,7 @@ var faceDeformer = function() {
   this.init = function(canvas) {
     // ready a webgl element
     gl = getWebGLContext(canvas); 
+    console.log(gl);
   }
 
   this.load = function(element, points, pModel, vertices) {

@@ -10,6 +10,9 @@ body {
   width: 100%;
   z-index: -1;
 }
+.dg{
+  display: none;
+}
 .footer img {
   width: 100%;
 }
