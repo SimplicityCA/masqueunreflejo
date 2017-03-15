@@ -87,7 +87,8 @@ function onKeyUp(e){
 };
 
 function postCanvasToFacebook() {
-  var canvas=document.getElementById("image");
+  var canvas=document.getElementById("webgl");
+  var webGLContext = canvas.getContext('webgl', {preserveDrawingBuffer: true}) || webGLTestCanvas.getContext('experimental-webgl', {preserveDrawingBuffer: true});
 	var data = canvas.toDataURL("image/png");
 	var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
 	var decodedPng = Base64Binary.decode(encodedPng);
