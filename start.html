@@ -287,19 +287,19 @@
                                             newh = 500;
                                             neww = newh/rel;
                                         }
-                                        canvas.setAttribute('width', neww);
+                                        canvas.setAttribute('width', 500);
                                         canvas.setAttribute('height', 500);
-                                        overlay.setAttribute('width', neww);
+                                        overlay.setAttribute('width', 500);
                                         overlay.setAttribute('height', 500);
-                                        webgl.setAttribute('width', neww);
+                                        webgl.setAttribute('width', 500);
                                         webgl.setAttribute('height', 500);
                                         cc.drawImage(img,0,0,neww, newh);
                                     } else {
-                                        canvas.setAttribute('width', img.width);
+                                        canvas.setAttribute('width', 500);
                                         canvas.setAttribute('height', 500);
-                                        overlay.setAttribute('width', img.width);
+                                        overlay.setAttribute('width', 500);
                                         overlay.setAttribute('height', 500);
-                                        webgl.setAttribute('width', img.width);
+                                        webgl.setAttribute('width', 500);
                                         webgl.setAttribute('height', 500);
                                         cc.drawImage(img,0,0,img.width, img.height);
                                     }
