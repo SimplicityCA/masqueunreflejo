@@ -87,12 +87,23 @@ function onKeyUp(e){
 };
 
 function postCanvasToFacebook() {
-  var canvas=document.getElementById("webgl");
-  var webGLContext = canvas.getContext('webgl', {preserveDrawingBuffer: true}) || webGLTestCanvas.getContext('experimental-webgl', {preserveDrawingBuffer: true});
-	var data = canvas.toDataURL("image/png");
+  originalCanvasContext.drawImage(webGLCanvasEl, 0, 0);
+  var canvasToShare = document.getElementById('image');
+  var canvasResult = document.getElementById('result');
+  if (originalImageHeight < 500) {
+    canvasResult.height = originalImageHeight;
+  }
+  if (originalImageWidth < 500) {
+    canvasResult.width = originalImageWidth;
+  }
+  canvasResultContext = canvasResult.getContext('2d');
+  canvasResultContext.drawImage(canvasToShare, 0, 0);
+  // var canvas = webGLCanvasEl;
+  // var webGLContext = webGLCanvasEl.getContext('webgl', {preserveDrawingBuffer: true}) || webGLTestCanvas.getContext('experimental-webgl', {preserveDrawingBuffer: true});
+	var data = canvasResult.toDataURL("image/png");
 	var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
 	var decodedPng = Base64Binary.decode(encodedPng);
-  console.log(FB);
+  // console.log(FB);
 	FB.getLoginStatus(function(response) {
 	  if (response.status === "connected") {
 		postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, "#masqueunreflejo");
