@@ -33,20 +33,31 @@
             <div id="efect-content" class="efect-content col-xs-12">
                 <div class="col-sm-3 col-xs-12 efects-container">
                     <p class="effect-title">Sube tu foto y selecciona un efecto:</p>
-                    <select class="form-control" name="deformation" id="deform">
-                        <option value="unwell">Malestar</option>
-                        <option value="inca">Inca</option>
-                        <option value="cheery">Alegre</option>
-                        <option value="dopey">Atontado</option>
-                        <option value="longface">Cara larga</option>
-                        <option value="lucky">Suertudo</option>
-                        <option value="overcute">Lindo</option>
-                        <option value="aloof">Dormido</option>
-                        <option value="evil">Malvado</option>
-                        <option value="artificial">Artificial</option>
-                        <option value="none">Ninguno</option>
-                    </select>
-                    <input class="btn btn-success btn-lg btn-block" type="button" value="Dar efecto" onclick="startVideo()" id="startbutton">
+<!--                     <select class="form-control" name="deformation" id="deform">
+                        <option value="Malestar">Malestar</option>
+                        <option value="Inca">Inca</option>
+                        <option value="Alegre">Alegre</option>
+                        <option value="Atontado">Atontado</option>
+                        <option value="Cara larga">Cara larga</option>
+                        <option value="Suertudo">Suertudo</option>
+                        <option value="Lindo">Lindo</option>
+                        <option value="Dormido">Dormido</option>
+                        <option value="Malvado">Malvado</option>
+                        <option value="Artificial">Artificial</option>
+                        <option value="Ninguno">Ninguno</option>
+                    </select> -->
+                     <input id="malestar" class="btn btn-success btn-lg btn-block" type="button" value="Malestar">
+                     <input id="inca" class="btn btn-success btn-lg btn-block" type="button" value="Inca">
+                     <input id="alegre" class="btn btn-success btn-lg btn-block" type="button" value="Alegre">
+                     <input id="atontado" class="btn btn-success btn-lg btn-block" type="button" value="Atontado">
+                     <input id="larga" class="btn btn-success btn-lg btn-block" type="button" value="Cara larga">
+                     <input id="suertudo" class="btn btn-success btn-lg btn-block" type="button" value="Suertudo">
+                     <input id="lindo" class="btn btn-success btn-lg btn-block" type="button" value="Lindo">
+                     <input id="dormido" class="btn btn-success btn-lg btn-block" type="button" value="Dormido">
+                     <input id="malvado" class="btn btn-success btn-lg btn-block" type="button" value="Malvado">
+                     <input id="artificial" class="btn btn-success btn-lg btn-block" type="button" value="Artificial">
+                     <input id="ninguno" class="btn btn-success btn-lg btn-block" type="button" value="Ninguno">
+                   <!--  <input class="btn btn-success btn-lg btn-block" type="button" value="Dar efecto" onclick="startVideo()" id="startbutton"> -->
                     
                 </div>
                 <div class="col-sm-9 col-xs-12">
@@ -362,9 +373,9 @@
                                 // originalImageHeight = img.height;
                                 // $( "#result" ).remove();
                                 // var canvasResult = document.createElement('canvas');
-                               
                                 gl = getWebGLContext(webgl); 
                                 gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT);
+                                $("#ninguno").click();
                                 // console.log(gl);
 
                             };
@@ -690,17 +701,17 @@
                 var gui = new dat.GUI();
             
                 var presets = {
-                    "unwell" : [0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                    "inca" : [0, 0, -9, 0, -11, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0],
-                    "cheery" : [0, 0, -9, 9, -11, 0, 0, 0, 0, 0, 0, 0, -9, 0, 0, 0, 0, 0],
-                    "dopey" : [0, 0, 0, 0, 0, 0, 0, -11, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0],
-                    "longface" : [0, 0, 0, 0, -15, 0, 0, -12, 0, 0, 0, 0, 0, 0, -7, 0, 0, 5],
-                    "lucky" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4, 0, -6, 12, 0, 0],
-                    "overcute" : [0, 0, 0, 0, 16, 0, -14, 0, 0, 0, 0, 0, -7, 0, 0, 0, 0, 0],
-                    "aloof" : [0, 0, 0, 0, 0, 0, 0, -8, 0, 0, 0, 0, 0, 0, -2, 0, 0, 10],
-                    "evil" : [0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -8],
-                    "artificial" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, -16, 0, 0, 0, 0, 0],
-                    "none" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    "Malestar" : [0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    "Inca" : [0, 0, -9, 0, -11, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0],
+                    "Alegre" : [0, 0, -9, 9, -11, 0, 0, 0, 0, 0, 0, 0, -9, 0, 0, 0, 0, 0],
+                    "Atontado" : [0, 0, 0, 0, 0, 0, 0, -11, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0],
+                    "Cara larga" : [0, 0, 0, 0, -15, 0, 0, -12, 0, 0, 0, 0, 0, 0, -7, 0, 0, 5],
+                    "Suertudo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4, 0, -6, 12, 0, 0],
+                    "Lindo" : [0, 0, 0, 0, 16, 0, -14, 0, 0, 0, 0, 0, -7, 0, 0, 0, 0, 0],
+                    "Dormido" : [0, 0, 0, 0, 0, 0, 0, -8, 0, 0, 0, 0, 0, 0, -2, 0, 0, 10],
+                    "Malvado" : [0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -8],
+                    "Artificial" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, -16, 0, 0, 0, 0, 0],
+                    "Ninguno" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 };
                 
                 var control = {};
@@ -713,14 +724,37 @@
                 /********** defaults code **********/
 
                 function switchDeformedFace(e) {
+                    startVideo();
                     //var split = ph.presets.split(",");
                     for (var i = 0;i < pnums;i++) {
+                        console.log(e.target.value);
                         ph['component '+(i+3)] = presets[e.target.value][i];
                     }
                 }
 
-                document.getElementById('deform').addEventListener('change', switchDeformedFace, false);
-                
+                // document.getElementById('deform').addEventListener('change', switchDeformedFace, false);
+                document.getElementById('malestar').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('inca').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('alegre').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('atontado').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('larga').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('suertudo').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('lindo').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('dormido').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('malvado').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('aritificial').addEventListener('click', switchDeformedFace, false);
+                document.getElementById('ninguno').addEventListener('click', switchDeformedFace, false);
+                // <input id="malestar" class="btn btn-success btn-lg btn-block" type="button" value="Malestar">
+                //      <input id="inca" class="btn btn-success btn-lg btn-block" type="button" value="Inca">
+                //      <input id="alegre" class="btn btn-success btn-lg btn-block" type="button" value="Alegre">
+                //      <input id="atontado" class="btn btn-success btn-lg btn-block" type="button" value="Atontado">
+                //      <input id="larga" class="btn btn-success btn-lg btn-block" type="button" value="Cara larga">
+                //      <input id="suertudo" class="btn btn-success btn-lg btn-block" type="button" value="Suertudo">
+                //      <input id="lindo" class="btn btn-success btn-lg btn-block" type="button" value="Lindo">
+                //      <input id="dormido" class="btn btn-success btn-lg btn-block" type="button" value="Dormido">
+                //      <input id="malvado" class="btn btn-success btn-lg btn-block" type="button" value="Malvado">
+                //      <input id="artificial" class="btn btn-success btn-lg btn-block" type="button" value="Artificial">
+                //      <input id="ninguno" class="btn btn-success btn-lg btn-block" type="button" value="Ninguno">
                 for (var i = 0;i < pnums;i++) {
                     ph['component '+(i+3)] = presets['unwell'][i];
                 }
