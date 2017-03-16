@@ -138,6 +138,33 @@
                $(".down-buttons").show();
              }); 
         })
+            $(function(){
+
+                var timer = 0;
+                var sensor_word = ['culo', 'caca', 'sexo', 'verga'];
+
+                $('#message').on('keyup', function(){
+
+                    clearTimeout(timer);
+                    var new_value = this.value;
+                    var new_sensor = $('#message').val();
+
+                    $.each(sensor_word, function (idx, word) {
+                      new_sensor = new_sensor.replace(word, '***');
+                    }); 
+
+                    timer = setTimeout(function(){
+                         $('#message').val( new_sensor );
+                    }, 0);
+
+                });
+
+                $('#message').on('keydown', function(){
+                    clearTimeout(timer);
+                });
+
+
+            });
         //rotate canvas
         function rotate () {
             var canvas = document.getElementById("image");
