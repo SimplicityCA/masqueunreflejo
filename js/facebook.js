@@ -97,14 +97,14 @@ function postCanvasToFacebook() {
   // console.log(FB);
 	FB.getLoginStatus(function(response) {
 	  if (response.status === "connected") {
-		postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, "#masqueunreflejo");
+		postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
 	  } else if (response.status === "not_authorized") {
 		 FB.login(function(response) {
-			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, "#masqueunreflejo");
+			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
 		 }, {scope: "publish_actions"});
 	  } else {
 		 FB.login(function(response)  {
-			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, "#masqueunreflejo");
+			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
 		 }, {scope: "publish_actions"});
 	  }
 	 });
