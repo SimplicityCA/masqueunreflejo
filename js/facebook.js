@@ -47,8 +47,8 @@ function postImageToFacebook( authToken, filename, mimeType, imageData, message 
     var xhr = new XMLHttpRequest();
     xhr.open( 'POST', 'https://graph.facebook.com/me/photos?access_token=' + authToken, true );
     xhr.onload = xhr.onerror = function() {
-        console.log( xhr.responseText );
-             console.log("compartio");
+        // console.log( xhr.responseText );
+             // console.log("compartio");
         window.location.href = 'http://dev.simplicityuniverse.com/masqueunreflejo/finish.html';
     };
     xhr.setRequestHeader( "Content-Type", "multipart/form-data; boundary=" + boundary );
@@ -89,17 +89,8 @@ function onKeyUp(e){
 function postCanvasToFacebook() {
   originalCanvasContext.drawImage(webGLCanvasEl, 0, 0);
   var canvasToShare = document.getElementById('image');
-  var canvasResult = document.getElementById('result');
-  if (originalImageHeight < 500) {
-    canvasResult.height = originalImageHeight;
-  }
-  if (originalImageWidth < 500) {
-    canvasResult.width = originalImageWidth;
-  }
   canvasResultContext = canvasResult.getContext('2d');
   canvasResultContext.drawImage(canvasToShare, 0, 0);
-  // var canvas = webGLCanvasEl;
-  // var webGLContext = webGLCanvasEl.getContext('webgl', {preserveDrawingBuffer: true}) || webGLTestCanvas.getContext('experimental-webgl', {preserveDrawingBuffer: true});
 	var data = canvasResult.toDataURL("image/png");
 	var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
 	var decodedPng = Base64Binary.decode(encodedPng);
