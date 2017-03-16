@@ -97,7 +97,7 @@ function postCanvasToFacebook() {
   // console.log(FB);
 	FB.getLoginStatus(function(response) {
 	  if (response.status === "connected") {
-		postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
+		postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+" #masqueunreflejo si quieres deformar tu foto entra a http://dev.simplicityuniverse.com/masqueunreflejo/start.html");
 	  } else if (response.status === "not_authorized") {
 		 FB.login(function(response) {
 			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
