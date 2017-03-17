@@ -702,7 +702,7 @@
                     "Dormido" : [0, 0, 0, 0, 0, 0, 0, -8, 0, 0, 0, 0, 0, 0, -2, 0, 0, 10],
                     "Malvado" : [0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, -8],
                     "Artificial" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, -16, 0, 0, 0, 0, 0],
-                    "Ninguno" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    // "Ninguno" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 };
                 
                 var control = {};
@@ -734,11 +734,11 @@
                 document.getElementById('dormido').addEventListener('click', switchDeformedFace, false);
                 document.getElementById('malvado').addEventListener('click', switchDeformedFace, false);
                 document.getElementById('artificial').addEventListener('click', switchDeformedFace, false);
-                document.getElementById('ninguno').addEventListener('click', switchDeformedFace, false);
+                // document.getElementById('ninguno').addEventListener('click', switchDeformedFace, false);
 
-                for (var i = 0;i < pnums;i++) {
-                    ph['component '+(i+3)] = presets['unwell'][i];
-                }
+                // for (var i = 0;i < pnums;i++) {
+                //     ph['component '+(i+3)] = presets['Malestar'][i];
+                // }
             </script>
     <canvas width="11px" height="781px" id="renderCanvas" style="display:none;"></canvas>
 </body>
