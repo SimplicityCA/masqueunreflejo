@@ -65,6 +65,31 @@ ul {
     padding: 0;
   }
 }
+.result-container > p {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+@media (min-width: 992px) {
+  .result-container > p {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .result-container > p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .result-container > p {
+    max-width: 320px;
+  }
+}
+@media (max-width: 340px) {
+  .result-container > p > img {
+    padding: 0 8px;
+  }
+}
 .button-container {
   margin-top: 350px;
   margin-bottom: 10px;
@@ -153,6 +178,11 @@ ul {
   width: 77%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .effect-title {
+    display: none;
+  }
 }
 @media (max-width: 991px) {
   .effect-content {
