@@ -889,6 +889,7 @@ var clm = {
 		
 		// detect position of face on canvas/video element
 		var detectPosition = function(el) {
+			// el=document.getElementById('image');
 			var canvas = document.createElement('canvas');
 			canvas.width = el.width;
 			canvas.height = el.height;

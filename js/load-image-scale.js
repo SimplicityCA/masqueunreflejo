@@ -103,8 +103,7 @@
     destWidth,
     destHeight
   ) {
-    // canvas.setAttribute("width","625")
-    // canvas.setAttribute("height","500")
+    
     canvas.getContext('2d').drawImage(
       img,
       sourceX,
@@ -116,9 +115,9 @@
       destWidth,
       destHeight
     )
-    canvas.setAttribute("id", "image")
-    // canvas.setAttribute("width","625")
-    // canvas.setAttribute("height","500")
+    // canvas.setAttribute("id", "image")
+    // canvas.setAttribute("style", "border:1px solid #000000;")
+    // canvas.setAttribute("class", "col-xs-12 col-sm-8 col-sm-offset-2")
     return canvas
   }
 
@@ -258,7 +257,7 @@
           sourceY = 0
           sourceWidth = canvas.width
           sourceHeight = canvas.height
-          img = document.createElement('canvas')
+          img = document.getElementById('image')
           img.width = sourceWidth
           img.height = sourceHeight
           loadImage.renderImageToCanvas(
