@@ -1,5 +1,5 @@
 body {
-  background: url('../../assets/fondo-cuadrado.jpg');
+  background: url('../../assets/fondo1.png');
   margin: 0 auto;
   font-size: 12px;
   font-family: 'Arial';
@@ -9,6 +9,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index: -1;
+  margin-top: 10px;
 }
 .footer img {
   width: 100%;
@@ -52,8 +53,9 @@ ul {
   }
 }
 .button-container {
-  margin-top: 485px;
+  margin-top: 350px;
   margin-bottom: 10px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .button-container {
@@ -62,13 +64,20 @@ ul {
 }
 @media (min-width: 992px) {
   .button-container {
-    margin-top: 380px;
+    margin-top: 540px;
   }
 }
 @media (min-width: 1200px) {
   .button-container {
-    margin-top: 410px;
+    margin-top: 510px;
   }
+}
+.button-container .image-upload > input {
+  display: none;
+}
+.button-container .image-upload img {
+  width: 300px;
+  cursor: pointer;
 }
 #overlay,
 #image,
@@ -90,30 +99,27 @@ ul {
 .down-buttons {
   padding-left: 24px;
   margin-bottom: 5px;
-}
-@media (min-width: 768px) {
-  .down-buttons {
-    padding-left: 37px;
-  }
-}
-@media (min-width: 992px) {
-  .down-buttons {
+  /*@media (min-width: 992px){
     padding-right: 0px;
     padding-left: 24px;
   }
-}
-@media (min-width: 1200px) {
-  .down-buttons {
-    padding-right: 34px;
+  @media (min-width: 1200px){
+    padding-right:34px;
     padding-left: 17px;
+  }*/
+}
+@media (min-width: 768px) {
+  .down-buttons {
+    padding-left: 41px;
   }
 }
 .down-buttons #label-message {
   color: #fff;
 }
 .effect-title {
-  font-size: 16px;
-  color: #fff;
+  width: 77%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #startbutton {
   margin-top: 10px;
@@ -123,8 +129,66 @@ ul {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 767px) {
-  .canvas-container {
-    padding-left: 0;
-  }
+.canvas-container {
+  text-align: center;
+  background: url('../../assets/marco.png') no-repeat;
+  /*@media (max-width: 767px)
+    {
+      padding-left:0;
+    }*/
+}
+.effects-container {
+  text-align: center;
+}
+.effects-container .btn {
+  color: transparent;
+  height: 100px;
+  width: 100px;
+}
+.effects-container #malestar {
+  background: url('../../assets/icono1.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #inca {
+  background: url('../../assets/icono2.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #alegre {
+  background: url('../../assets/icono3.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #atontado {
+  background: url('../../assets/icono4.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #larga {
+  background: url('../../assets/icono5.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #suertudo {
+  background: url('../../assets/icono6.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #lindo {
+  background: url('../../assets/icono7.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #dormido {
+  background: url('../../assets/icono8.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #malvado {
+  background: url('../../assets/icono9.png') no-repeat;
+  background-size: 100%;
+}
+.effects-container #artificial {
+  background: url('../../assets/icono10.png') no-repeat;
+  background-size: 100%;
+}
+#turn,
+#share {
+  width: 300px;
+}
+#function_buttons a.btn {
+  padding: 0!important;
 }

@@ -30,28 +30,23 @@
             </div>
         </div>
         <div class="row">
-            <div id="efect-content" class="efect-content col-xs-12">
-                <div class="col-sm-3 col-xs-12 efects-container">
-                    <p class="effect-title">Sube tu foto y selecciona un efecto:</p>
-<!--                     <select class="form-control" name="deformation" id="deform">
-                        <option value="Malestar">Malestar</option>
-                        <option value="Inca">Inca</option>
-                        <option value="Alegre">Alegre</option>
-                        <option value="Atontado">Atontado</option>
-                        <option value="Cara larga">Cara larga</option>
-                        <option value="Suertudo">Suertudo</option>
-                        <option value="Lindo">Lindo</option>
-                        <option value="Dormido">Dormido</option>
-                        <option value="Malvado">Malvado</option>
-                        <option value="Artificial">Artificial</option>
-                        <option value="Ninguno">Ninguno</option>
-                    </select> -->
-
-                   <!--  <input class="btn btn-success btn-lg btn-block" type="button" value="Dar efecto" onclick="startVideo()" id="startbutton"> -->
-                    
+            <div id="effect-content" class="effect-content col-xs-12">
+                <div class="col-md-5 col-sm-12 effects-container">
+                    <p><img src="assets/titulo-efecto.png" alt="mas que un reflejo" class="img effect-title"/></p>
+                    <input id="malestar" class="btn" type="button" value="Malestar">
+                    <input id="inca" class="btn" type="button" value="Inca">
+                    <input id="alegre" class="btn" type="button" value="Alegre">
+                    <input id="atontado" class="btn" type="button" value="Atontado">
+                    <input id="larga" class="btn" type="button" value="Cara larga">
+                    <input id="suertudo" class="btn" type="button" value="Suertudo">
+                    <input id="lindo" class="btn" type="button" value="Lindo">
+                    <input id="dormido" class="btn" type="button" value="Dormido">
+                    <input id="malvado" class="btn" type="button" value="Malvado">
+                    <input id="artificial" class="btn" type="button" value="Artificial">
                 </div>
-                <div class="col-sm-9 col-xs-12">
-                   <div class="col-sm-6 col-md-offset-2 canvas-container">
+
+                <div class="col-md-7 col-sm-12">
+                   <div class="col-xs-1 col-sm-3 col-md-1 canvas-container">
                         <canvas id="image" style="border:1px solid #000000;"  width="500" height="500" >
                             Your browser does not support the HTML5 canvas tag.
                         </canvas>
@@ -63,41 +58,36 @@
                     <br>
         
                     <p  style="display: none;" id="convergence"></p>
-                    
-                </div>
-                
-                
-                <div class="button-container col-sm-9 col-md-offset-3" >
-                        <div class="col-xs-12 col-md-9 col-lg-8 col-md-offset-2 down-buttons">
-                            <input id="file-input" type="file" class="filestyle" data-buttonText="Buscar Archivo">
+                    <div class="button-container" >
+                        <div class="col-xs-12 col-md-9 col-lg-8 col-md-offset-1 down-buttons">
+                            <div class="image-upload">
+                                <label for="file-input">
+                                    <img src="assets/boton-buscar.png"/>
+                                </label>
+                                <input id="file-input" type="file"/>
+                            </div>
+                            <!-- <input id="file-input" type="file" class="filestyle" data-buttonText="Buscar Archivo"> -->
                         </div>
-                        <div id="function_buttons" class="col-xs-12 col-md-9 col-lg-8 col-md-offset-2 down-buttons" style="display:none;">
-                            <a  class="btn btn-primary btn-common btn-lg btn-block" onclick="rotate()" href="#">Rotar</a>
+                        <div id="function_buttons" class="col-xs-12 col-md-9 col-lg-8 col-md-offset-1 down-buttons" style="display:none;">
+                            <a  class="btn" onclick="rotate()" href="#"><img id="turn" src="assets/boton-rotar.png"/></a>
                             <hr>
                             <div class="form-group">
                             <label id="label-message" for="message">Mensaje:</label>
                             <input type="text" class="form-control" id="message" placeholder="Mensaje">
                           </div>
-                            <a class="btn btn-primary btn-lg btn-block"  onclick="postCanvasToFacebook()" >Compartir en fb</a>
+                            <a class="btn"  onclick="postCanvasToFacebook()" ><img id="share" src="assets/compartir.png"/></a>
                         </div>
-                     <input id="malestar" class="btn btn-success btn-lg btn-block" type="button" value="Malestar">
-                     <input id="inca" class="btn btn-success btn-lg btn-block" type="button" value="Inca">
-                     <input id="alegre" class="btn btn-success btn-lg btn-block" type="button" value="Alegre">
-                     <input id="atontado" class="btn btn-success btn-lg btn-block" type="button" value="Atontado">
-                     <input id="larga" class="btn btn-success btn-lg btn-block" type="button" value="Cara larga">
-                     <input id="suertudo" class="btn btn-success btn-lg btn-block" type="button" value="Suertudo">
-                     <input id="lindo" class="btn btn-success btn-lg btn-block" type="button" value="Lindo">
-                     <input id="dormido" class="btn btn-success btn-lg btn-block" type="button" value="Dormido">
-                     <input id="malvado" class="btn btn-success btn-lg btn-block" type="button" value="Malvado">
-                     <input id="artificial" class="btn btn-success btn-lg btn-block" type="button" value="Artificial">
-                     <input id="ninguno" class="btn btn-success btn-lg btn-block" type="button" value="Ninguno">
                     </div>
+                </div>
+                
+                
+                
             </div>
         </div>
     </div>
     <footer class="footer">
 	      <div class="container">
-	        <img src="assets/footer-pratonato-san-jose.png" alt="mas que un reflejo" class="img"/>
+	        <img src="assets/footer-colores-patronato-san-jose.png" alt="mas que un reflejo" class="img"/>
 	      </div>
 	    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -260,13 +250,13 @@
                 // detect if tracker fails to find a face
                 document.addEventListener("clmtrackrNotFound", function(event) {
                     ctrack.stop();
-                    alert("Hubieron problemas para encontrar el rostro en la imagen. Por favor intenta con otra.")
+                    alert("Exisitieron problemas para encontrar el rostro en la imagen. Por favor intenta con otra.")
                 }, false);
                 
                 // detect if tracker loses tracking of face
                 document.addEventListener("clmtrackrLost", function(event) {
                     ctrack.stop();
-                    alert("Hubieron problemas para encontrar el rostro en la imagen. Por favor intenta con otra.")
+                    alert("Exisitieron problemas para encontrar el rostro en la imagen. Por favor intenta con otra.")
                 }, false);
                 
                 // detect if tracker has converged

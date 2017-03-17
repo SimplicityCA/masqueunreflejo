@@ -1,6 +1,6 @@
 @import 'vars.less';
 body {
-  background: url('../../assets/fondo-cuadrado.jpg'); 
+  background: url('../../assets/fondo1.png'); 
   margin: 0 auto;
   font-size: 12px;
   font-family: 'Arial';
@@ -11,7 +11,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index:-1;
-
+  margin-top:10px;
   img{
     width:100%
   }
@@ -62,17 +62,29 @@ img {
 
 .button-container{
   
-  margin-top: 485px;
+  margin-top: 350px;
   margin-bottom:10px;
+  text-align:center;
 
     @media (min-width: 768px){
       margin-top: 500px;
     }
     @media (min-width: 992px){
-      margin-top: 380px;
+      margin-top: 540px;
     }
     @media (min-width: 1200px){
-      margin-top:410px;
+      margin-top:510px;
+    }
+
+    .image-upload > input
+    {
+        display: none;
+    }
+
+    .image-upload img
+    {
+        width: 300px;
+        cursor: pointer;
     }
 }
 
@@ -94,23 +106,24 @@ img {
   margin-bottom:5px;
   
   @media (min-width: 768px){
-    padding-left: 37px;
+    padding-left: 41px;
   }
-  @media (min-width: 992px){
+  /*@media (min-width: 992px){
     padding-right: 0px;
     padding-left: 24px;
   }
   @media (min-width: 1200px){
     padding-right:34px;
     padding-left: 17px;
-  }
+  }*/
   #label-message{
     color:#fff;
   }
 }
 .effect-title{
-  font-size:16px;
-  color:#fff;
+  width:77%;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 #startbutton{
   margin-top:10px;
@@ -120,8 +133,67 @@ img {
     }
 }
 .canvas-container{
-  @media (max-width: 767px)
+  text-align:center;
+  /*@media (max-width: 767px)
     {
       padding-left:0;
-    }
+    }*/
+}
+.effects-container{
+  text-align: center;
+  .btn{
+    color:transparent;
+    height:100px;
+    width:100px;
+  }
+  #malestar{
+    background:url('../../assets/icono1.png') no-repeat;
+    background-size: 100%;
+  }
+  #inca{
+    background:url('../../assets/icono2.png') no-repeat;
+    background-size: 100%;
+  }
+  #alegre{
+    background:url('../../assets/icono3.png') no-repeat;
+    background-size: 100%;
+  }
+  #atontado{
+    background:url('../../assets/icono4.png') no-repeat;
+    background-size: 100%;
+  }
+  #larga{
+    background:url('../../assets/icono5.png') no-repeat;
+    background-size: 100%;
+  }
+  #suertudo{
+    background:url('../../assets/icono6.png') no-repeat;
+    background-size: 100%;
+  }
+  #lindo{
+    background:url('../../assets/icono7.png') no-repeat;
+    background-size: 100%;
+  }
+  #dormido{
+    background:url('../../assets/icono8.png') no-repeat;
+    background-size: 100%;
+  }
+  #malvado{
+    background:url('../../assets/icono9.png') no-repeat;
+    background-size: 100%;
+  }
+  #artificial{
+    background:url('../../assets/icono10.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+#turn, #share{
+  width:300px;
+}
+
+#function_buttons{
+  a.btn{
+    padding:0!important;
+  }
 }
