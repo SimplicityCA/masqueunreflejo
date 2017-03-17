@@ -52,6 +52,19 @@ ul {
     width: 100%;
   }
 }
+.result-container {
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .result-container {
+    order: 1;
+  }
+}
+@media (max-width: 767px) {
+  .result-container {
+    padding: 0;
+  }
+}
 .button-container {
   margin-top: 350px;
   margin-bottom: 10px;
@@ -70,6 +83,11 @@ ul {
 @media (min-width: 1200px) {
   .button-container {
     margin-top: 510px;
+  }
+}
+@media (max-width: 991px) {
+  .button-container {
+    margin-top: 10px;
   }
 }
 .button-container .image-upload > input {
@@ -94,6 +112,21 @@ ul {
   #webgl {
     width: 320px;
     height: 320px;
+  }
+}
+@media (max-width: 991px) {
+  #image {
+    position: relative;
+  }
+}
+#overlay,
+#webgl {
+  top: 0;
+}
+@media (max-width: 991px) {
+  #overlay,
+  #webgl {
+    left: 0;
   }
 }
 .down-buttons {
@@ -121,6 +154,17 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@media (max-width: 991px) {
+  .effect-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .effect-content {
+    padding: 0;
+  }
+}
 #startbutton {
   margin-top: 10px;
 }
@@ -131,14 +175,27 @@ ul {
 }
 .canvas-container {
   text-align: center;
-  background: url('../../assets/marco.png') no-repeat;
-  /*@media (max-width: 767px)
-    {
-      padding-left:0;
-    }*/
+  position: relative;
+}
+@media (max-width: 991px) {
+  .canvas-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .canvas-container {
+    max-width: 320px;
+  }
 }
 .effects-container {
   text-align: center;
+}
+@media (max-width: 991px) {
+  .effects-container {
+    order: 2;
+  }
 }
 .effects-container .btn {
   color: transparent;
