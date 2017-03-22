@@ -184,6 +184,9 @@ ul {
     display: none;
   }
 }
+.effect-content {
+  margin-top: 15px;
+}
 @media (max-width: 991px) {
   .effect-content {
     display: flex;
