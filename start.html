@@ -18,13 +18,23 @@
         <div class="row">
         	<div class="header col-xs-12">
               	<img src="assets/mas-que-un-reflejo.png" alt="mas que un reflejo" class="img"/>
+                <img src="assets/patronato-alcaldia-logos.png" alt="mas que un reflejo" class="img logos"/>
             </div>
         </div>
         <div class="row">
             <div id="effect-content" class="effect-content col-xs-12">
                 <div class="col-md-5 col-sm-12 effects-container">
-                    <p><img src="assets/titulo-efecto.png" alt="mas que un reflejo" class="img effect-title"/></p>
-                    <p class="hidden-xs hidden-sm instructions">Procura que la imagen no tenga mucha luz o tenga un fondo oscuro, las im&aacute;genes tomadas con la camara frontal se reconocen mejor si son tomadas horizontalmente, no olvides girar la foto si no sale de forma correcta</p>
+                    <p>
+                        <img src="assets/titulo-efecto.png" alt="mas que un reflejo" class="img effect-title"/>
+                    </p>
+                    <div class="hidden-xs hidden-sm instructions">
+                        <p>Ahora todos podemos ponerle un alto al bullying juvenil con la campaña "Mas que un Reflejo" del Patronato San José. Más de 12000 jovenes se han unido con el objetivo de decirle NO al acoso y respetar las diferencias. Si deseas conocer más puedes seguirnos con el hashtag #MásQueUnReflejo en las redes sociales del Patronato San Jose.</p>
+
+                        <p>Sube tu foto y selecciona un efecto.</p>
+                        <p>- Procura que la imágen no tenga mucha luz o tenga un fondo oscuro.</p>
+                        <p>- Si usas tu cámara frontal, toma tu foto horizontalmente.</p>
+                        <p>- Selecciona un efecto y comparte en tus redes, puedes verla en #MásQueUnReflejo</p>
+                    </div>
                     <input id="malestar" class="btn" type="button" value="Malestar">
                     <input id="inca" class="btn" type="button" value="Inca">
                     <input id="alegre" class="btn" type="button" value="Alegre">
@@ -39,7 +49,14 @@
 
                 <div class="col-md-7 col-sm-12 result-container">
                     <p><img src="assets/titulo-efecto.png" alt="mas que un reflejo"/></p>
-                    <p class="hidden-md hidden-lg instructions">Procura que la imagen no tenga mucha luz o tenga un fondo oscuro, las im&aacute;genes tomadas con la camara frontal se reconocen mejor si son tomadas horizontalmente, no olvides girar la foto si no sale de forma correcta</p>
+                    <div class="hidden-md hidden-lg instructions">
+                        <p>Ahora todos podemos ponerle un alto al bullying juvenil con la campaña "Mas que un Reflejo" del Patronato San José. Más de 12000 jovenes se han unido con el objetivo de decirle NO al acoso y respetar las diferencias. Si deseas conocer más puedes seguirnos con el hashtag #MásQueUnReflejo en las redes sociales del Patronato San Jose.</p>
+
+                        <p>Sube tu foto y selecciona un efecto.</p>
+                        <p>- Procura que la imágen no tenga mucha luz o tenga un fondo oscuro.</p>
+                        <p>- Si usas tu cámara frontal, toma tu foto horizontalmente.</p>
+                        <p>- Selecciona un efecto y comparte en tus redes, puedes verla en #MásQueUnReflejo</p>
+                    </div>
                     <div class="col-md-1 canvas-container">
                         <canvas id="image" style="border:1px solid #000000;"  width="500" height="500" >
                             Your browser does not support the HTML5 canvas tag.
@@ -334,8 +351,6 @@
                                 img.src = e.target.result;
                                 gl = getWebGLContext(webgl); 
                                 gl.clear(gl.DEPTH_BUFFER_BIT | gl.COLOR_BUFFER_BIT);
-                                // setTimeout(function() { startVideo(); }, 200);
-                                console.log("cambio");
                             };
                         })(fileList[fileIndex]);
                         reader.readAsDataURL(fileList[fileIndex]);
@@ -557,7 +572,6 @@
                     videocanvas.getContext('2d').drawImage(vid,0,0,videocanvas.width,videocanvas.height);
                     
                     var pos = ctrack.getCurrentPosition(vid);
-                    console.log(pos);
                     if(pos){
                        
                     
@@ -655,7 +669,7 @@
                     for (var i = 0;i < pnums;i++) {
                         ph['component '+(i+3)] = presets[e.target.value][i];
                     }
-                    console.log(e.target.value);
+                    // console.log(e.target.value);
                 }
 
                 document.getElementById('malestar').addEventListener('click', switchDeformedFace, false);

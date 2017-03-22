@@ -237,11 +237,11 @@ ul {
   background-size: 100%;
 }
 .effects-container #inca {
-  background: url('../../assets/icono2.png') no-repeat;
+  background: url('../../assets/enojado.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #alegre {
-  background: url('../../assets/icono3.png') no-repeat;
+  background: url('../../assets/alegre.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #atontado {
@@ -253,11 +253,11 @@ ul {
   background-size: 100%;
 }
 .effects-container #suertudo {
-  background: url('../../assets/icono6.png') no-repeat;
+  background: url('../../assets/suertudo.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #lindo {
-  background: url('../../assets/icono7.png') no-repeat;
+  background: url('../../assets/lindo.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #dormido {
@@ -265,7 +265,7 @@ ul {
   background-size: 100%;
 }
 .effects-container #malvado {
-  background: url('../../assets/icono9.png') no-repeat;
+  background: url('../../assets/malvado.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #artificial {
@@ -295,7 +295,19 @@ ul {
 }
 @media (max-width: 991px) {
   .instructions {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+}
+#malestar,
+#atontado,
+#larga,
+#dormido,
+#artificial {
+  display: none;
+}
+.logos {
+  display: inline-block;
+  width: 40% !important;
+  float: right;
 }
