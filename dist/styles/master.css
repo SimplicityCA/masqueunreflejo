@@ -107,7 +107,7 @@ ul {
 }
 @media (min-width: 1200px) {
   .button-container {
-    margin-top: 510px;
+    margin-top: 540px;
   }
 }
 @media (max-width: 991px) {
@@ -310,4 +310,16 @@ ul {
   display: inline-block;
   width: 40% !important;
   float: right;
+}
+.social-icons {
+  margin-top: 25px;
+}
+.social-icons a {
+  color: #FFF !important;
+  max-width: 50px;
+  max-height: 50px;
+}
+.social-icons a span {
+  line-height: 50px !important;
+  font-size: 28px !important;
 }
