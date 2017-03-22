@@ -322,7 +322,7 @@ ul {
   max-width: 50px;
   max-height: 50px;
 }
-.social-icons a span {
+.social-icons a i {
   line-height: 50px !important;
-  font-size: 28px !important;
+  font-size: 36px !important;
 }
