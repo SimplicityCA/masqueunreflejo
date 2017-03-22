@@ -104,7 +104,7 @@ img {
       margin-top: 540px;
     }
     @media (min-width: 1200px){
-      margin-top:510px;
+      margin-top: 540px;
     }
     @media (max-width: 991px) {
       margin-top: 10px;
@@ -222,11 +222,11 @@ img {
     background-size: 100%;
   }
   #inca{
-    background:url('../../assets/icono2.png') no-repeat;
+    background:url('../../assets/enojado.png') no-repeat;
     background-size: 100%;
   }
   #alegre{
-    background:url('../../assets/icono3.png') no-repeat;
+    background:url('../../assets/alegre.png') no-repeat;
     background-size: 100%;
   }
   #atontado{
@@ -238,11 +238,11 @@ img {
     background-size: 100%;
   }
   #suertudo{
-    background:url('../../assets/icono6.png') no-repeat;
+    background:url('../../assets/suertudo.png') no-repeat;
     background-size: 100%;
   }
   #lindo{
-    background:url('../../assets/icono7.png') no-repeat;
+    background:url('../../assets/lindo.png') no-repeat;
     background-size: 100%;
   }
   #dormido{
@@ -250,7 +250,7 @@ img {
     background-size: 100%;
   }
   #malvado{
-    background:url('../../assets/icono9.png') no-repeat;
+    background:url('../../assets/malvado.png') no-repeat;
     background-size: 100%;
   }
   #artificial{
@@ -266,5 +266,52 @@ img {
 #function_buttons{
   a.btn{
     padding:0!important;
+  }
+}
+
+.instructions{
+  color: #fff;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 22px;
+  padding-right: 22px;
+  
+  @media (max-width: 1199px) {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  @media (max-width: 991px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+//Hide some effects for final product
+#malestar,
+// #inca,
+#atontado,
+#larga,
+#dormido,
+#artificial {
+  display: none;
+}
+.logos {
+  display: inline-block;
+  width: 40% !important;
+  float: right;
+}
+
+.social-icons {
+  margin-top: 25px;
+  a {
+    color: #FFF !important;
+    max-width: 50px;
+    max-height: 50px;
+    span {  
+      line-height: 50px !important;
+      font-size: 28px !important;
+    }
   }
 }

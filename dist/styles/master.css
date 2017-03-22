@@ -107,7 +107,7 @@ ul {
 }
 @media (min-width: 1200px) {
   .button-container {
-    margin-top: 510px;
+    margin-top: 540px;
   }
 }
 @media (max-width: 991px) {
@@ -237,11 +237,11 @@ ul {
   background-size: 100%;
 }
 .effects-container #inca {
-  background: url('../../assets/icono2.png') no-repeat;
+  background: url('../../assets/enojado.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #alegre {
-  background: url('../../assets/icono3.png') no-repeat;
+  background: url('../../assets/alegre.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #atontado {
@@ -253,11 +253,11 @@ ul {
   background-size: 100%;
 }
 .effects-container #suertudo {
-  background: url('../../assets/icono6.png') no-repeat;
+  background: url('../../assets/suertudo.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #lindo {
-  background: url('../../assets/icono7.png') no-repeat;
+  background: url('../../assets/lindo.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #dormido {
@@ -265,7 +265,7 @@ ul {
   background-size: 100%;
 }
 .effects-container #malvado {
-  background: url('../../assets/icono9.png') no-repeat;
+  background: url('../../assets/malvado.png') no-repeat;
   background-size: 100%;
 }
 .effects-container #artificial {
@@ -278,4 +278,48 @@ ul {
 }
 #function_buttons a.btn {
   padding: 0!important;
+}
+.instructions {
+  color: #fff;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+@media (max-width: 1199px) {
+  .instructions {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+@media (max-width: 991px) {
+  .instructions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+#malestar,
+#atontado,
+#larga,
+#dormido,
+#artificial {
+  display: none;
+}
+.logos {
+  display: inline-block;
+  width: 40% !important;
+  float: right;
+}
+.social-icons {
+  margin-top: 25px;
+}
+.social-icons a {
+  color: #FFF !important;
+  max-width: 50px;
+  max-height: 50px;
+}
+.social-icons a span {
+  line-height: 50px !important;
+  font-size: 28px !important;
 }
