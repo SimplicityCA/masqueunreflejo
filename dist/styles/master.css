@@ -325,11 +325,20 @@ ul {
 .social-icons a.facebook span {
   background-color: #3b5998;
 }
+.social-icons a.facebook span:hover {
+  background-color: #2d4373;
+}
 .social-icons a.twitter span {
   background-color: #55acee;
 }
+.social-icons a.twitter span:hover {
+  background-color: #2795e9;
+}
 .social-icons a.instagram span {
   background-color: #DD1066;
+}
+.social-icons a.instagram span:hover {
+  background-color: #C4008A;
 }
 .social-icons a span {
   line-height: 50px !important;
