@@ -319,10 +319,22 @@ ul {
 }
 .social-icons a {
   color: #FFF !important;
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
 }
-.social-icons a i {
+.social-icons a.facebook span {
+  background-color: #3b5998;
+}
+.social-icons a.twitter span {
+  background-color: #55acee;
+}
+.social-icons a.instagram span {
+  background-color: #DD1066;
+}
+.social-icons a span {
   line-height: 50px !important;
   font-size: 36px !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
 }
