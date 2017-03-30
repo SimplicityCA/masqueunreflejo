@@ -100,11 +100,11 @@ function postCanvasToFacebook() {
 		postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+" #masqueunreflejo si quieres deformar tu foto entra a http://www.patronato.quito.gob.ec/masqueunreflejo");
 	  } else if (response.status === "not_authorized") {
 		 FB.login(function(response) {
-			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
+			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+" #masqueunreflejo si quieres deformar tu foto entra a http://www.patronato.quito.gob.ec/masqueunreflejo");
 		 }, {scope: "publish_actions"});
 	  } else {
 		 FB.login(function(response)  {
-			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+"#masqueunreflejo");
+			postImageToFacebook(response.authResponse.accessToken, "masqueunreflejo", "image/png", decodedPng, $('#message').val()+" #masqueunreflejo si quieres deformar tu foto entra a http://www.patronato.quito.gob.ec/masqueunreflejo");
 		 }, {scope: "publish_actions"});
 	  }
 	 });
